@@ -1,0 +1,48 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    position: relative;
+    height: 100%;
+    background-image: linear-gradient(#125dee, #31fbe5);
+}
+
+main > * {
+    height: 100%;
+}
+
+#background {
+    background-image: url("../image/background.svg");
+    background-size: 23vh;
+    background-position: 0 0;
+    opacity: .1;
+    animation: background 10s linear infinite;
+}
+
+@keyframes background {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 23vh 23vh;
+    }
+}
+
+#screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#screen .content {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
