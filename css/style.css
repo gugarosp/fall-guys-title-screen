@@ -1,3 +1,4 @@
+/* GLOBALS */
 html,
 body {
     height: 100%;
@@ -14,6 +15,7 @@ main > * {
     height: 100%;
 }
 
+/* BACKGROUND */
 #background {
     background-image: url("../image/background.svg");
     background-size: 23vh;
@@ -32,11 +34,13 @@ main > * {
     }
 }
 
+/* SCREEN */
 #screen {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 #screen .content {
@@ -45,4 +49,91 @@ main > * {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+/* CIRCLES */
+.circles svg {
+    aspect-ratio: 1;
+}
+
+.circles circle {
+    fill: transparent;
+    stroke-linecap: round;
+}
+
+
+/* CIRCLES - Orange (Thick) /Magenta */
+#circle-orange-magenta {
+    animation: circle-orange-magenta 20s linear infinite;
+}
+
+@keyframes circle-orange-magenta {
+    from {
+        rotate: 360deg;
+    }
+
+    to {
+        rotate: 0;
+    }
+}
+
+#circle-orange-magenta svg {
+    position: absolute;
+    scale: 1.24;
+}
+
+#circle-orange-magenta-orange circle {
+    stroke: #ffca46;
+    stroke-width: 10%;
+}
+
+#circle-orange-magenta-magenta circle {
+    stroke: #ff7ce4;
+    stroke-width: 9%;
+    stroke-dasharray: 194%;
+}
+
+#circle-orange-magenta-shadow-over-magenta {
+    mix-blend-mode: soft-light;
+    opacity: .2;
+    filter: blur(2px);
+}
+
+#circle-orange-magenta-shadow-over-magenta circle {
+    stroke: black;
+    stroke-width: 9%;
+    stroke-dasharray: 194%;
+}
+
+/* CIRCLES - Cyan Thick */
+#circle-cyan-thick {
+    animation: circle-cyan-thick 20s linear infinite;
+}
+
+#circle-cyan-thick svg {
+    position: absolute;
+    width: 80%;
+}
+
+#circle-cyan-thick circle {
+    stroke: cyan;
+    stroke-width: 7%;
+    stroke-dasharray: 223%;
+}
+
+#circle-cyan-thick-shadow {
+    translate: .6%;
+    mix-blend-mode: soft-light;
+    opacity: .25;
+    filter: blur(1px);
+}
+
+@keyframes circle-cyan-thick {
+    from {
+        rotate: -90deg;
+    }
+
+    to {
+        rotate: 270deg;
+    }
 }
