@@ -110,24 +110,6 @@ main > * {
     animation: circle-cyan-thick 20s linear infinite;
 }
 
-#circle-cyan-thick svg {
-    position: absolute;
-    width: 80%;
-}
-
-#circle-cyan-thick circle {
-    stroke: cyan;
-    stroke-width: 7%;
-    stroke-dasharray: 223%;
-}
-
-#circle-cyan-thick-shadow {
-    translate: .6%;
-    mix-blend-mode: soft-light;
-    opacity: .25;
-    filter: blur(1px);
-}
-
 @keyframes circle-cyan-thick {
     from {
         rotate: -90deg;
@@ -136,4 +118,99 @@ main > * {
     to {
         rotate: 270deg;
     }
+}
+
+#circle-cyan-thick svg {
+    position: absolute;
+    width: 80%;
+}
+
+#circle-cyan-thick circle {
+    stroke: #2cefe1;
+    stroke-width: 7%;
+    stroke-dasharray: 223%;
+}
+
+#circle-cyan-thick svg#circle-cyan-thick-shadow {
+    translate: .5%;
+    mix-blend-mode: soft-light;
+    opacity: .25;
+    filter: blur(1px);
+}
+
+/* CIRCLES - Cyan Thin */
+#circle-cyan-thin {
+    animation: circle-cyan-thin 20s linear infinite;
+}
+
+@keyframes circle-cyan-thin {
+    from {
+        rotate: 315deg;
+    }
+
+    to {
+        rotate: -45deg;
+    }
+}
+
+#circle-cyan-thin svg {
+    width: 71.5%;
+    opacity: .7;
+}
+
+#circle-cyan-thin circle {
+    stroke: #2cefe1;
+    stroke-width: .8%;
+    stroke-dasharray: 103% 6% 21% 12% 88% 19% 22% 1000%;
+}
+
+/* CIRCLES - Cyan Thin */
+#circle-orange-thin {
+    animation: circle-orange-thin 20s linear infinite;
+}
+
+@keyframes circle-orange-thin {
+    from {
+        rotate: -45deg;
+    }
+
+    to {
+        rotate: 315deg;
+    }
+}
+
+#circle-orange-thin svg {
+    width: 53%;
+}
+
+#circle-orange-thin circle {
+    stroke: #fdd83f;
+    stroke-width: 1.15%;
+    stroke-dasharray: 102% 6% 22% 11% 90% 18% 22% 1000%;
+}
+
+/* CIRCLES - Cyan Medium */
+#circle-cyan-medium {
+    animation: circle-cyan-medium 20s linear infinite;
+}
+
+@keyframes circle-cyan-medium {
+    from {
+        rotate: 270deg;
+    }
+
+    to {
+        rotate: -90deg;
+    }
+}
+
+#circle-cyan-medium svg {
+    width: 43%;
+    opacity: .7;
+}
+
+#circle-cyan-medium circle {
+    stroke: #2cefe1;
+    stroke-width: 6%;
+    stroke-dasharray: 269% 1000%;
 }
