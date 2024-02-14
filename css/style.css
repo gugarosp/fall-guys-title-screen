@@ -89,7 +89,7 @@ main > * {
 
 #circle-orange-magenta-magenta circle {
     stroke: #ff7ce4;
-    stroke-width: 9%;
+    stroke-width: 7.5%;
     stroke-dasharray: 194%;
 }
 
@@ -122,17 +122,17 @@ main > * {
 
 #circle-cyan-thick svg {
     position: absolute;
-    width: 80%;
+    width: 83.2%;
 }
 
 #circle-cyan-thick circle {
     stroke: #2cefe1;
-    stroke-width: 7%;
+    stroke-width: 6.3%;
     stroke-dasharray: 223%;
 }
 
 #circle-cyan-thick svg#circle-cyan-thick-shadow {
-    translate: .5%;
+    translate: .4% -.3%;
     mix-blend-mode: soft-light;
     opacity: .25;
     filter: blur(1px);
@@ -154,12 +154,12 @@ main > * {
 }
 
 #circle-cyan-thin svg {
-    width: 71.5%;
-    opacity: .7;
+    width: 75.2%;
+    opacity: .6;
 }
 
 #circle-cyan-thin circle {
-    stroke: #2cefe1;
+    stroke: #7cfdf4;
     stroke-width: .8%;
     stroke-dasharray: 103% 6% 21% 12% 88% 19% 22% 1000%;
 }
@@ -180,7 +180,7 @@ main > * {
 }
 
 #circle-orange-thin svg {
-    width: 53%;
+    width: 57%;
 }
 
 #circle-orange-thin circle {
@@ -205,12 +205,12 @@ main > * {
 }
 
 #circle-cyan-medium svg {
-    width: 43%;
+    width: 47.8%;
     opacity: .7;
 }
 
 #circle-cyan-medium circle {
     stroke: #2cefe1;
-    stroke-width: 6%;
+    stroke-width: 4.6%;
     stroke-dasharray: 269% 1000%;
 }
