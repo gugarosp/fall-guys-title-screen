@@ -252,3 +252,13 @@ main > * {
     stroke: #f8aa02;
     stroke-width: 2%;
 }
+
+/* LOGO */
+#logo {
+    top: .7%;
+    left: .7%;
+}
+
+#logo img {
+    height: 42.5%;
+}
