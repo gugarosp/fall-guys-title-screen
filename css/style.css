@@ -62,12 +62,12 @@ main > * {
 }
 
 
-/* CIRCLES - Orange (Thick) /Magenta */
-#circle-orange-magenta {
-    animation: circle-orange-magenta 20s linear infinite;
+/* CIRCLES - Orange (Thick) / Magenta (Thick) */
+#circle-orange-thick-magenta-thick {
+    animation: circle-orange-thick-magenta-thick 20s linear infinite;
 }
 
-@keyframes circle-orange-magenta {
+@keyframes circle-orange-thick-magenta-thick {
     from {
         rotate: 360deg;
     }
@@ -77,29 +77,29 @@ main > * {
     }
 }
 
-#circle-orange-magenta svg {
+#circle-orange-thick-magenta-thick svg {
     position: absolute;
     scale: 1.24;
 }
 
-#circle-orange-magenta-orange circle {
+#circle-orange-thick-magenta-thick-orange circle {
     stroke: #ffca46;
     stroke-width: 10%;
 }
 
-#circle-orange-magenta-magenta circle {
+#circle-orange-thick-magenta-thick-magenta circle {
     stroke: #ff7ce4;
     stroke-width: 7.5%;
     stroke-dasharray: 194%;
 }
 
-#circle-orange-magenta-shadow-over-magenta {
+#circle-orange-thick-magenta-thick-shadow-over-magenta {
     mix-blend-mode: soft-light;
     opacity: .2;
     filter: blur(2px);
 }
 
-#circle-orange-magenta-shadow-over-magenta circle {
+#circle-orange-thick-magenta-thick-shadow-over-magenta circle {
     stroke: black;
     stroke-width: 9%;
     stroke-dasharray: 194%;
@@ -213,4 +213,42 @@ main > * {
     stroke: #2cefe1;
     stroke-width: 4.6%;
     stroke-dasharray: 269% 1000%;
+}
+
+/* CIRCLES - Orange (Thin) / Magenta (Thin) */
+#circle-orange-thin-magenta-thin {
+    rotate: 5deg;
+    top: 1.1%;
+}
+
+#circle-orange-thin-magenta-thin svg {
+    position: absolute;
+    width: 31%;
+}
+
+#circle-orange-thin-magenta-thin-orange circle,
+#circle-orange-thin-magenta-thin-magenta circle {
+    stroke-width: 1.8%;
+}
+
+#circle-orange-thin-magenta-thin-orange circle {
+    stroke: #fdda42;
+    stroke-dasharray: 88.6% 11.5% 24.9% 5.8% 128.9% 1000%;
+}
+
+#circle-orange-thin-magenta-thin-magenta circle {
+    stroke: #fca5ec;
+    stroke-dasharray: 92% 12% 26% 6% 134% 1000%;
+}
+
+#circle-filled-outer circle {
+    fill: #fec80e;
+    stroke: #fdda42;
+    stroke-width: 2%;
+}
+
+#circle-filled-inner circle {
+    fill: #fea551;
+    stroke: #f8aa02;
+    stroke-width: 2%;
 }
