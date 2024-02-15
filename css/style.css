@@ -88,9 +88,17 @@ main > * {
 }
 
 #circle-orange-thick-magenta-thick-magenta circle {
-    stroke: #ff7ce4;
+    stroke: url(#stars);
     stroke-width: 7.5%;
     stroke-dasharray: 194%;
+}
+
+#circle-orange-thick-magenta-thick-magenta rect {
+    fill: #ff7ce4;
+}
+
+#circle-orange-thick-magenta-thick-magenta image {
+    opacity: .2;
 }
 
 #circle-orange-thick-magenta-thick-shadow-over-magenta {
