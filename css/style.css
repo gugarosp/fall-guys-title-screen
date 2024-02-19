@@ -1,4 +1,4 @@
-/* GLOBALS */
+/*===== GLOBALS =====*/
 html,
 body {
     height: 100%;
@@ -15,7 +15,7 @@ main > * {
     height: 100%;
 }
 
-/* BACKGROUND */
+/*===== BACKGROUND =====*/
 #background {
     background-image: url("../image/background.svg");
     background-size: 23vh;
@@ -34,7 +34,7 @@ main > * {
     }
 }
 
-/* SCREEN */
+/*===== SCREEN =====*/
 #screen {
     position: absolute;
     top: 0;
@@ -51,7 +51,7 @@ main > * {
     height: 100%;
 }
 
-/* CIRCLES */
+/*===== CIRCLES =====*/
 .circles svg {
     aspect-ratio: 1;
 }
@@ -62,7 +62,7 @@ main > * {
 }
 
 
-/* CIRCLES - Orange (Thick) / Magenta (Thick) */
+/*===== CIRCLES - Orange (Thick) / Magenta (Thick) =====*/
 #circle-orange-thick-magenta-thick {
     animation: circle-orange-thick-magenta-thick 20s linear infinite;
 }
@@ -82,28 +82,204 @@ main > * {
     scale: 1.24;
 }
 
+/* Orange (Thick) */
 #circle-orange-thick-magenta-thick-orange circle {
     stroke: #ffca46;
     stroke-width: 10%;
 }
 
+/* Magenta (Thick) */
 #circle-orange-thick-magenta-thick-magenta circle {
+    stroke: #ff7ce4;
+    stroke-width: 7.5%;
+    stroke-dasharray: 194%;
+}
+
+/* Stars */
+#circle-orange-thick-magenta-thick-stars circle {
     stroke: url(#stars);
     stroke-width: 7.5%;
     stroke-dasharray: 194%;
 }
 
-#circle-orange-thick-magenta-thick-magenta rect {
-    fill: #ff7ce4;
+#circle-orange-thick-magenta-thick-stars #magenta-thick-bg {
+    width: 100%;
+    height: 100%;
 }
 
-#circle-orange-thick-magenta-thick-magenta image {
+#circle-orange-thick-magenta-thick-stars [class^="stars-line"] {
+    width: 100%;
+    height: 7.23%;
+}
+
+#circle-orange-thick-magenta-thick-stars .stars-line-0 {y: 0%; fill: url(#stars-image-0)}
+#circle-orange-thick-magenta-thick-stars .stars-line-1 {y: 7.23%; fill: url(#stars-image-1)}
+#circle-orange-thick-magenta-thick-stars .stars-line-2 {y: 14.46%; fill: url(#stars-image-2)}
+#circle-orange-thick-magenta-thick-stars .stars-line-3 {y: 21.69%; fill: url(#stars-image-3)}
+#circle-orange-thick-magenta-thick-stars .stars-line-4 {y: 28.92%; fill: url(#stars-image-4)}
+#circle-orange-thick-magenta-thick-stars .stars-line-5 {y: 36.15%; fill: url(#stars-image-5)}
+#circle-orange-thick-magenta-thick-stars .stars-line-6 {y: 43.38%; fill: url(#stars-image-6)}
+#circle-orange-thick-magenta-thick-stars .stars-line-7 {y: 50.61%; fill: url(#stars-image-7)}
+#circle-orange-thick-magenta-thick-stars .stars-line-8 {y: 57.84%; fill: url(#stars-image-8)}
+#circle-orange-thick-magenta-thick-stars .stars-line-9 {y: 65.07%; fill: url(#stars-image-9)}
+#circle-orange-thick-magenta-thick-stars .stars-line-10 {y: 72.23%; fill: url(#stars-image-10)}
+#circle-orange-thick-magenta-thick-stars .stars-line-11 {y: 79.53%; fill: url(#stars-image-11)}
+#circle-orange-thick-magenta-thick-stars .stars-line-12 {y: 86.76%; fill: url(#stars-image-12)}
+#circle-orange-thick-magenta-thick-stars .stars-line-13 {y: 93.99%; fill: url(#stars-image-13)}
+
+#circle-orange-thick-magenta-thick-stars [id^="stars-image-"] image {
+    width: 100%;
+    height: 7.23%;
+}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-0 image:nth-child(1) {x: -56.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-0 image:nth-child(2) {x: -42.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-0 image:nth-child(3) {x: -28.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-0 image:nth-child(4) {x: -14.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-0 image:nth-child(5) {x: 0%}
+#circle-orange-thick-magenta-thick-stars #stars-image-0 image:nth-child(6) {x: 14.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-0 image:nth-child(7) {x: 28.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-0 image:nth-child(8) {x: 42.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-0 image:nth-child(9) {x: 56.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-1 image:nth-child(1) {x: -55.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-1 image:nth-child(2) {x: -41.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-1 image:nth-child(3) {x: -27.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-1 image:nth-child(4) {x: -13.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-1 image:nth-child(5) {x: 1%}
+#circle-orange-thick-magenta-thick-stars #stars-image-1 image:nth-child(6) {x: 15.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-1 image:nth-child(7) {x: 29.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-1 image:nth-child(8) {x: 43.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-1 image:nth-child(9) {x: 57.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-2 image:nth-child(1) {x: -54.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-2 image:nth-child(2) {x: -40.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-2 image:nth-child(3) {x: -26.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-2 image:nth-child(4) {x: -22.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-2 image:nth-child(5) {x: 2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-2 image:nth-child(6) {x: 16.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-2 image:nth-child(7) {x: 30.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-2 image:nth-child(8) {x: 44.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-2 image:nth-child(9) {x: 58.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-3 image:nth-child(1) {x: -53.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-3 image:nth-child(2) {x: -39.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-3 image:nth-child(3) {x: -25.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-3 image:nth-child(4) {x: -11.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-3 image:nth-child(5) {x: 3%}
+#circle-orange-thick-magenta-thick-stars #stars-image-3 image:nth-child(6) {x: 17.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-3 image:nth-child(7) {x: 31.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-3 image:nth-child(8) {x: 45.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-3 image:nth-child(9) {x: 59.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-4 image:nth-child(1) {x: -52.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-4 image:nth-child(2) {x: -38.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-4 image:nth-child(3) {x: -24.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-4 image:nth-child(4) {x: -10.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-4 image:nth-child(5) {x: 4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-4 image:nth-child(6) {x: 18.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-4 image:nth-child(7) {x: 32.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-4 image:nth-child(8) {x: 46.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-4 image:nth-child(9) {x: 60.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-5 image:nth-child(1) {x: -51.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-5 image:nth-child(2) {x: -37.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-5 image:nth-child(3) {x: -23.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-5 image:nth-child(4) {x: -9.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-5 image:nth-child(5) {x: 5%}
+#circle-orange-thick-magenta-thick-stars #stars-image-5 image:nth-child(6) {x: 19.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-5 image:nth-child(7) {x: 33.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-5 image:nth-child(8) {x: 47.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-5 image:nth-child(9) {x: 61.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-6 image:nth-child(1) {x: -50.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-6 image:nth-child(2) {x: -36.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-6 image:nth-child(3) {x: -22.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-6 image:nth-child(4) {x: -8.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-6 image:nth-child(5) {x: 6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-6 image:nth-child(6) {x: 20.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-6 image:nth-child(7) {x: 34.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-6 image:nth-child(8) {x: 48.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-6 image:nth-child(9) {x: 62.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-7 image:nth-child(1) {x: -49.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-7 image:nth-child(2) {x: -35.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-7 image:nth-child(3) {x: -21.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-7 image:nth-child(4) {x: -7.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-7 image:nth-child(5) {x: 7%}
+#circle-orange-thick-magenta-thick-stars #stars-image-7 image:nth-child(6) {x: 21.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-7 image:nth-child(7) {x: 35.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-7 image:nth-child(8) {x: 49.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-7 image:nth-child(9) {x: 63.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-8 image:nth-child(1) {x: -48.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-8 image:nth-child(2) {x: -34.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-8 image:nth-child(3) {x: -20.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-8 image:nth-child(4) {x: -6.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-8 image:nth-child(5) {x: 8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-8 image:nth-child(6) {x: 22.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-8 image:nth-child(7) {x: 36.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-8 image:nth-child(8) {x: 50.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-8 image:nth-child(9) {x: 64.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-9 image:nth-child(1) {x: -47.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-9 image:nth-child(2) {x: -33.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-9 image:nth-child(3) {x: -19.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-9 image:nth-child(4) {x: -5.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-9 image:nth-child(5) {x: 9%}
+#circle-orange-thick-magenta-thick-stars #stars-image-9 image:nth-child(6) {x: 23.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-9 image:nth-child(7) {x: 37.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-9 image:nth-child(8) {x: 51.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-9 image:nth-child(9) {x: 65.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-10 image:nth-child(1) {x: -46.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-10 image:nth-child(2) {x: -32.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-10 image:nth-child(3) {x: -18.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-10 image:nth-child(4) {x: -4.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-10 image:nth-child(5) {x: 10%}
+#circle-orange-thick-magenta-thick-stars #stars-image-10 image:nth-child(6) {x: 24.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-10 image:nth-child(7) {x: 38.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-10 image:nth-child(8) {x: 52.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-10 image:nth-child(9) {x: 66.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-11 image:nth-child(1) {x: -45.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-11 image:nth-child(2) {x: -31.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-11 image:nth-child(3) {x: -17.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-11 image:nth-child(4) {x: -3.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-11 image:nth-child(5) {x: 11%}
+#circle-orange-thick-magenta-thick-stars #stars-image-11 image:nth-child(6) {x: 25.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-11 image:nth-child(7) {x: 39.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-11 image:nth-child(8) {x: 53.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-11 image:nth-child(9) {x: 67.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-12 image:nth-child(1) {x: -44.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-12 image:nth-child(2) {x: -30.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-12 image:nth-child(3) {x: -16.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-12 image:nth-child(4) {x: -2.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-12 image:nth-child(5) {x: 12%}
+#circle-orange-thick-magenta-thick-stars #stars-image-12 image:nth-child(6) {x: 26.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-12 image:nth-child(7) {x: 40.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-12 image:nth-child(8) {x: 54.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-12 image:nth-child(9) {x: 68.8%}
+
+#circle-orange-thick-magenta-thick-stars #stars-image-13 image:nth-child(1) {x: -43.8%}
+#circle-orange-thick-magenta-thick-stars #stars-image-13 image:nth-child(2) {x: -29.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-13 image:nth-child(3) {x: -15.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-13 image:nth-child(4) {x: -1.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-13 image:nth-child(5) {x: 13%}
+#circle-orange-thick-magenta-thick-stars #stars-image-13 image:nth-child(6) {x: 27.2%}
+#circle-orange-thick-magenta-thick-stars #stars-image-13 image:nth-child(7) {x: 41.4%}
+#circle-orange-thick-magenta-thick-stars #stars-image-13 image:nth-child(8) {x: 55.6%}
+#circle-orange-thick-magenta-thick-stars #stars-image-13 image:nth-child(9) {x: 69.8%}
+
+#circle-orange-thick-magenta-thick-stars image {
     opacity: .2;
 }
 
+/* Magenta (Shadow over magenta) */
 #circle-orange-thick-magenta-thick-shadow-over-magenta {
     mix-blend-mode: soft-light;
-    opacity: .2;
+    opacity: .4;
     filter: blur(2px);
 }
 
@@ -113,7 +289,7 @@ main > * {
     stroke-dasharray: 194%;
 }
 
-/* CIRCLES - Cyan Thick */
+/*===== CIRCLES - Cyan Thick =====*/
 #circle-cyan-thick {
     animation: circle-cyan-thick 20s linear infinite;
 }
@@ -146,7 +322,7 @@ main > * {
     filter: blur(1px);
 }
 
-/* CIRCLES - Cyan Thin */
+/*===== CIRCLES - Cyan Thin =====*/
 #circle-cyan-thin {
     animation: circle-cyan-thin 20s linear infinite;
 }
@@ -172,7 +348,7 @@ main > * {
     stroke-dasharray: 103% 6% 21% 12% 88% 19% 22% 1000%;
 }
 
-/* CIRCLES - Cyan Thin */
+/*===== CIRCLES - Cyan Thin =====*/
 #circle-orange-thin {
     animation: circle-orange-thin 20s linear infinite;
 }
@@ -197,7 +373,7 @@ main > * {
     stroke-dasharray: 102% 6% 22% 11% 90% 18% 22% 1000%;
 }
 
-/* CIRCLES - Cyan Medium */
+/*===== CIRCLES - Cyan Medium =====*/
 #circle-cyan-medium {
     animation: circle-cyan-medium 20s linear infinite;
 }
@@ -223,7 +399,7 @@ main > * {
     stroke-dasharray: 269% 1000%;
 }
 
-/* CIRCLES - Orange (Thin) / Magenta (Thin) */
+/*===== CIRCLES - Orange (Thin) / Magenta (Thin) =====*/
 #circle-orange-thin-magenta-thin {
     rotate: 5deg;
     top: 1.1%;
@@ -261,7 +437,7 @@ main > * {
     stroke-width: 2%;
 }
 
-/* LOGO */
+/*===== LOGO =====*/
 #logo {
     top: .7%;
     left: .7%;

@@ -4,33 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fall Guys Title Screen</title>
-
+    
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 </head>
 <body>
-
+    
     <main>
         <div id="background"></div>
         <div id="screen">
             <div id="circle-orange-thick-magenta-thick" class="content circles">
                 <svg id="circle-orange-thick-magenta-thick-magenta">
+                    <circle cx="50%" cy="50%" r="39%"></circle>
+                </svg>
+                <svg id="circle-orange-thick-magenta-thick-stars">
                     <defs>
-                        <pattern id="stars" patternUnits="userSpaceOnUse" width="14.2%" height="100%">
-                            <rect width="100%" height="100%"></rect>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="7.23%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="14.46%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="21.69%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="28.92%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="36.15%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="43.38%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="50.61%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="57.84%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="65.07%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="72.23%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="79.53%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="86.76%"></image>
-                            <image xlink:href="image/stars.svg" width="14.2%" height="7.23%" y="93.99%"></image>
+                        <pattern id="stars" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                            <rect class="stars-line-0"></rect>
+                            <rect class="stars-line-1"></rect>
+                            <rect class="stars-line-2"></rect>
+                            <rect class="stars-line-3"></rect>
+                            <rect class="stars-line-4"></rect>
+                            <rect class="stars-line-5"></rect>
+                            <rect class="stars-line-6"></rect>
+                            <rect class="stars-line-7"></rect>
+                            <rect class="stars-line-8"></rect>
+                            <rect class="stars-line-9"></rect>
+                            <rect class="stars-line-10"></rect>
+                            <rect class="stars-line-11"></rect>
+                            <rect class="stars-line-12"></rect>
+                            <rect class="stars-line-13"></rect>
+                        </pattern>
+                        <pattern id="stars-image-0" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-1" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-2" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-3" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-4" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-5" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-6" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-7" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-8" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-9" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-10" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-11" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-12" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                        </pattern>
+                        <pattern id="stars-image-13" patternUnits="userSpaceOnUse" width="100%" height="7.23%">
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
+                            <image xlink:href="image/stars.svg"></image>
                         </pattern>
                     </defs>
                     <circle cx="50%" cy="50%" r="39%"></circle>
