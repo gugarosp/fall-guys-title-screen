@@ -82,10 +82,15 @@ main > * {
     scale: 1.24;
 }
 
+/* Oranges (Halftone/Thick) */
+#circle-orange-thick-magenta-thick-orange-halftone,
+#circle-orange-thick-magenta-thick-orange {
+    stroke-width: 10%;
+}
+
 /* Orange Halftone */
 #circle-orange-thick-magenta-thick-orange-halftone circle {
     stroke: url(#orange-halftone);
-    stroke-width: 10%;
 }
 
 #circle-orange-thick-magenta-thick-orange-halftone image {
@@ -106,14 +111,28 @@ main > * {
 /* Orange (Thick) */
 #circle-orange-thick-magenta-thick-orange circle {
     stroke: #ffca46;
-    stroke-width: 10%;
 }
 
-/* Shadow Over Magenta Halftone */
-#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone {
+/* Magentas (Shadow Over/Thick) */
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone,
+#circle-orange-thick-magenta-thick-shadow-over-magenta {
     rotate: 1.5deg;
 }
 
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone circle,
+#circle-orange-thick-magenta-thick-shadow-over-magenta circle {
+    stroke-width: 9%;
+    stroke-dasharray: 216.8%;
+    stroke-linecap: square;
+}
+
+#circle-orange-thick-magenta-thick-magenta circle,
+#circle-orange-thick-magenta-thick-stars circle {
+    stroke-width: 7.5%;
+    stroke-dasharray: 194%;
+}
+
+/* Shadow Over Magenta Halftone */
 #circle-orange-thick-magenta-thick-shadow-over-magenta-halftone image {
     width: 35%;
     height: 100%;
@@ -132,36 +151,25 @@ main > * {
 
 #circle-orange-thick-magenta-thick-shadow-over-magenta-halftone circle {
     stroke: url(#shadow-over-magenta-halftone);
-    stroke-width: 9%;
-    stroke-dasharray: 216.8%;
-    stroke-linecap: square;
 }
 
 /* Shadow Over Magenta */
 #circle-orange-thick-magenta-thick-shadow-over-magenta {
-    rotate: 1.5deg;
     filter: blur(1px);
 }
 
 #circle-orange-thick-magenta-thick-shadow-over-magenta circle {
     stroke: #ef7fe7;
-    stroke-width: 9%;
-    stroke-dasharray: 216.8%;
-    stroke-linecap: square;
 }
 
 /* Magenta (Thick) */
 #circle-orange-thick-magenta-thick-magenta circle {
     stroke: #ff7ce4;
-    stroke-width: 7.5%;
-    stroke-dasharray: 194%;
 }
 
 /* Stars */
 #circle-orange-thick-magenta-thick-stars circle {
     stroke: url(#stars);
-    stroke-width: 7.5%;
-    stroke-dasharray: 194%;
 }
 
 #circle-orange-thick-magenta-thick-stars #magenta-thick-bg {
