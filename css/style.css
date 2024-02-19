@@ -64,7 +64,7 @@ main > * {
 
 /*===== CIRCLES - Orange (Thick) / Magenta (Thick) =====*/
 #circle-orange-thick-magenta-thick {
-    animation: circle-orange-thick-magenta-thick 20s linear infinite;
+    /* animation: circle-orange-thick-magenta-thick 20s linear infinite; */
 }
 
 @keyframes circle-orange-thick-magenta-thick {
@@ -80,6 +80,27 @@ main > * {
 #circle-orange-thick-magenta-thick svg {
     position: absolute;
     scale: 1.24;
+}
+
+/* Orange Halftone */
+#circle-orange-thick-magenta-thick-orange-halftone circle {
+    stroke: url(#orange-halftone);
+    stroke-width: 10%;
+}
+
+#circle-orange-thick-magenta-thick-orange-halftone image {
+    width: 35%;
+    height: 100%;
+}
+
+#circle-orange-thick-magenta-thick-orange-halftone image:nth-child(1) {x: 3%; y: -15%;}
+#circle-orange-thick-magenta-thick-orange-halftone image:nth-child(2) {x: 63%; y: -3%;}
+#circle-orange-thick-magenta-thick-orange-halftone image:nth-child(3) {x: 3%; y: 17%;}
+#circle-orange-thick-magenta-thick-orange-halftone image:nth-child(4) {x: 77%; y: 21%;}
+
+#circle-orange-thick-magenta-thick-orange-halftone image:nth-child(3),
+#circle-orange-thick-magenta-thick-orange-halftone image:nth-child(4) {
+    opacity: .2;
 }
 
 /* Orange (Thick) */
@@ -278,15 +299,17 @@ main > * {
 
 /* Magenta (Shadow over magenta) */
 #circle-orange-thick-magenta-thick-shadow-over-magenta {
+    rotate: 1.5deg;
     mix-blend-mode: soft-light;
     opacity: .4;
-    filter: blur(2px);
+    filter: blur(1px);
 }
 
 #circle-orange-thick-magenta-thick-shadow-over-magenta circle {
-    stroke: black;
+    stroke: #510c49;
     stroke-width: 9%;
-    stroke-dasharray: 194%;
+    stroke-dasharray: 216.8%;
+    stroke-linecap: square;
 }
 
 /*===== CIRCLES - Cyan Thick =====*/
