@@ -64,7 +64,7 @@ main > * {
 
 /*===== CIRCLES - Orange (Thick) / Magenta (Thick) =====*/
 #circle-orange-thick-magenta-thick {
-    animation: circle-orange-thick-magenta-thick 20s linear infinite;
+    /* animation: circle-orange-thick-magenta-thick 20s linear infinite; */
 }
 
 @keyframes circle-orange-thick-magenta-thick {
@@ -107,6 +107,47 @@ main > * {
 #circle-orange-thick-magenta-thick-orange circle {
     stroke: #ffca46;
     stroke-width: 10%;
+}
+
+/* Shadow Over Magenta Halftone */
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone {
+    rotate: 1.5deg;
+}
+
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone image {
+    width: 35%;
+    height: 100%;
+    opacity: .2;
+}
+
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone image:nth-child(1) {x: 3%; y: -15%;}
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone image:nth-child(2) {x: 63%; y: -3%;}
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone image:nth-child(3) {x: 3%; y: 17%;}
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone image:nth-child(4) {x: 77%; y: 21%;}
+
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone image:nth-child(3),
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone image:nth-child(4) {
+    opacity: .2;
+}
+
+#circle-orange-thick-magenta-thick-shadow-over-magenta-halftone circle {
+    stroke: url(#shadow-over-magenta-halftone);
+    stroke-width: 9%;
+    stroke-dasharray: 216.8%;
+    stroke-linecap: square;
+}
+
+/* Shadow Over Magenta */
+#circle-orange-thick-magenta-thick-shadow-over-magenta {
+    rotate: 1.5deg;
+    filter: blur(1px);
+}
+
+#circle-orange-thick-magenta-thick-shadow-over-magenta circle {
+    stroke: #ef7fe7;
+    stroke-width: 9%;
+    stroke-dasharray: 216.8%;
+    stroke-linecap: square;
 }
 
 /* Magenta (Thick) */
@@ -297,18 +338,6 @@ main > * {
     opacity: .2;
 }
 
-/* Magenta (Shadow over magenta) */
-#circle-orange-thick-magenta-thick-shadow-over-magenta {
-    rotate: 1.5deg;
-    filter: blur(1px);
-}
-
-#circle-orange-thick-magenta-thick-shadow-over-magenta circle {
-    stroke: #ef7fe7;
-    stroke-width: 9%;
-    stroke-dasharray: 216.8%;
-    stroke-linecap: square;
-}
 
 /*===== CIRCLES - Cyan Thick =====*/
 #circle-cyan-thick {
