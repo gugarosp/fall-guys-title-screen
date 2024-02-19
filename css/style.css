@@ -64,7 +64,7 @@ main > * {
 
 /*===== CIRCLES - Orange (Thick) / Magenta (Thick) =====*/
 #circle-orange-thick-magenta-thick {
-    /* animation: circle-orange-thick-magenta-thick 20s linear infinite; */
+    animation: circle-orange-thick-magenta-thick 20s linear infinite;
 }
 
 @keyframes circle-orange-thick-magenta-thick {
@@ -300,13 +300,11 @@ main > * {
 /* Magenta (Shadow over magenta) */
 #circle-orange-thick-magenta-thick-shadow-over-magenta {
     rotate: 1.5deg;
-    mix-blend-mode: soft-light;
-    opacity: .4;
     filter: blur(1px);
 }
 
 #circle-orange-thick-magenta-thick-shadow-over-magenta circle {
-    stroke: #510c49;
+    stroke: #ef7fe7;
     stroke-width: 9%;
     stroke-dasharray: 216.8%;
     stroke-linecap: square;
