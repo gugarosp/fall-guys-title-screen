@@ -21,7 +21,7 @@ main > * {
     background-size: 23vh;
     background-position: 0 0;
     opacity: .1;
-    /*animation: background 10s linear infinite;*/
+    animation: background 10s linear infinite;
 }
 
 @keyframes background {
@@ -63,7 +63,7 @@ main > * {
 
 /*===== CIRCLES - Orange (Thick) / Magenta (Thick) =====*/
 #circle-orange-thick-magenta-thick {
-    /*animation: circle-orange-thick-magenta-thick 20s linear infinite;*/
+    animation: circle-orange-thick-magenta-thick 20s linear infinite;
 }
 
 @keyframes circle-orange-thick-magenta-thick {
@@ -330,7 +330,7 @@ main > * {
 
 /*===== CIRCLES - Cyan Thick/Cyan Shadow =====*/
 #circle-cyan-thick-cyan-shadow {
-    /*animation: circle-cyan-thick 20s linear infinite;*/
+    animation: circle-cyan-thick 20s linear infinite;
 }
 
 @keyframes circle-cyan-thick {
@@ -404,7 +404,7 @@ main > * {
 
 /*===== CIRCLES - Cyan Thin =====*/
 #circle-cyan-thin {
-    /*animation: circle-cyan-thin 20s linear infinite;*/
+    animation: circle-cyan-thin 20s linear infinite;
 }
 
 @keyframes circle-cyan-thin {
@@ -430,7 +430,7 @@ main > * {
 
 /*===== CIRCLES - Cyan Thin =====*/
 #circle-orange-thin {
-    /*animation: circle-orange-thin 20s linear infinite;*/
+    animation: circle-orange-thin 20s linear infinite;
 }
 
 @keyframes circle-orange-thin {
@@ -455,7 +455,7 @@ main > * {
 
 /*===== CIRCLES - Cyan Medium =====*/
 #circle-cyan-medium {
-    /*animation: circle-cyan-medium 20s linear infinite;*/
+    animation: circle-cyan-medium 20s linear infinite;
 }
 
 @keyframes circle-cyan-medium {
