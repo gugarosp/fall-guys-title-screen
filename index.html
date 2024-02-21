@@ -12,11 +12,11 @@
     <main>
         <div id="background"></div>
         <div id="screen">
-            <div id="circle-orange-thick-magenta-thick" class="content circles">
-                <svg viewBox="0 0 10000 10000" id="circle-orange-thick-magenta-thick-magenta">
+            <div id="circles-outer" class="content circles">
+                <svg viewBox="0 0 10000 10000" id="circle-outer-magenta">
                     <defs>
                         <pattern id="stars" patternUnits="userSpaceOnUse" width="100%" height="100%">
-                            <rect id="magenta-thick-bg"></rect>
+                            <rect id="outer-magenta-bg"></rect>
                             <rect class="stars-line-0"></rect>
                             <rect class="stars-line-1"></rect>
                             <rect class="stars-line-2"></rect>
@@ -189,10 +189,10 @@
                     </defs>
                     <circle cx="50%" cy="50%" r="39%"></circle>
                 </svg>
-                <svg viewBox="0 0 10000 10000" id="circle-orange-thick-magenta-thick-shadow-over-magenta">
+                <svg viewBox="0 0 10000 10000" id="circle-outer-shadow-over-magenta">
                     <defs>
                         <pattern id="shadow-over-magenta-halftone" patternUnits="userSpaceOnUse" width="100%" height="100%">
-                            <rect id="shadow-over-magenta-bg"></rect>
+                            <rect id="outer-shadow-over-magenta-bg"></rect>
                             <image xlink:href="image/white-halftone.svg"></image>
                             <image xlink:href="image/white-halftone.svg"></image>
                             <image xlink:href="image/white-halftone.svg"></image>
@@ -201,10 +201,10 @@
                     </defs>
                     <circle cx="50%" cy="50%" r="44%"></circle>
                 </svg>
-                <svg viewBox="0 0 10000 10000" id="circle-orange-thick-magenta-thick-orange">
+                <svg viewBox="0 0 10000 10000" id="circle-outer-orange">
                     <defs>
                         <pattern id="orange-halftone" patternUnits="userSpaceOnUse" width="100%" height="100%">
-                            <rect id="orange-thick-bg"></rect>
+                            <rect id="outer-orange-bg"></rect>
                             <image xlink:href="image/orange-halftone.svg"></image>
                             <image xlink:href="image/orange-halftone.svg"></image>
                             <image xlink:href="image/orange-halftone.svg"></image>
@@ -214,7 +214,7 @@
                     <circle cx="50%" cy="50%" r="45%"></circle>
                 </svg>
             </div>
-            <div id="circle-cyan-thick-cyan-shadow" class="content circles">
+            <div id="circle-cyan" class="content circles">
                 <svg viewBox="0 0 10000 10000" id="circle-cyan-thick-shadow">
                     <defs>
                         <pattern id="cyan-thick-shadow-halftone" patternUnits="userSpaceOnUse" width="100%" height="100%">
@@ -256,11 +256,11 @@
                 </svg>
             </div>
             <div id="full-logo" class="content">
-                <div id="circle-orange-thin-magenta-thin" class="content circles">
-                    <svg id="circle-orange-thin-magenta-thin-magenta">
+                <div id="circles-logo" class="content circles">
+                    <svg id="circles-logo-magenta">
                         <circle cx="50%" cy="50%" r="44.5%"></circle>
                     </svg>
-                    <svg id="circle-orange-thin-magenta-thin-orange">
+                    <svg id="circles-logo-orange">
                         <circle cx="50%" cy="50%" r="42.8%"></circle>
                     </svg>
                     <svg id="circle-filled-outer">
