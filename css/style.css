@@ -63,10 +63,12 @@ main > * {
 
 /*===== CIRCLES - Orange (Thick) / Magenta (Thick) =====*/
 #circle-orange-thick-magenta-thick {
-    animation: circle-orange-thick-magenta-thick 20s linear infinite;
+    scale: 0;
+    animation: circle-orange-thick-magenta-thick-rotation 20s linear infinite,
+               circle-orange-thick-magenta-thick-scale 1.25s ease-in-out .2s 1 forwards;
 }
 
-@keyframes circle-orange-thick-magenta-thick {
+@keyframes circle-orange-thick-magenta-thick-rotation {
     from {
         rotate: 360deg;
     }
@@ -74,6 +76,16 @@ main > * {
     to {
         rotate: 0;
     }
+}
+
+@keyframes circle-orange-thick-magenta-thick-scale {
+    0% { scale: 0; }
+    40% { scale: 1.25; }
+    59% { scale: .9; }
+    76% { scale: 1.125; }
+    87% { scale: .975; }
+    94% { scale: 1.025; }
+    100% { scale: 1; }
 }
 
 #circle-orange-thick-magenta-thick svg {
@@ -330,10 +342,12 @@ main > * {
 
 /*===== CIRCLES - Cyan Thick/Cyan Shadow =====*/
 #circle-cyan-thick-cyan-shadow {
-    animation: circle-cyan-thick 20s linear infinite;
+    scale: 0;
+    animation: circle-cyan-thick-rotation 20s linear infinite,
+                circle-cyan-thick-scale 1.25s ease-in-out .2s 1 forwards;
 }
 
-@keyframes circle-cyan-thick {
+@keyframes circle-cyan-thick-rotation {
     from {
         rotate: -90deg;
     }
@@ -341,6 +355,16 @@ main > * {
     to {
         rotate: 270deg;
     }
+}
+
+@keyframes circle-cyan-thick-scale {
+    0% { scale: 0; }
+    45% { scale: 1.15; }
+    63% { scale: .85; }
+    78% { scale: 1.125; }
+    89% { scale: .975; }
+    97% { scale: 1.025; }
+    100% { scale: 1; }
 }
 
 #circle-cyan-thick-cyan-shadow svg {
@@ -404,10 +428,12 @@ main > * {
 
 /*===== CIRCLES - Cyan Thin =====*/
 #circle-cyan-thin {
-    animation: circle-cyan-thin 20s linear infinite;
+    scale: 0;
+    animation: circle-cyan-thin-rotation 20s linear infinite,
+               circle-cyan-thin-scale 1.25s ease-in-out .2s 1 forwards;
 }
 
-@keyframes circle-cyan-thin {
+@keyframes circle-cyan-thin-rotation {
     from {
         rotate: 315deg;
     }
@@ -415,6 +441,16 @@ main > * {
     to {
         rotate: -45deg;
     }
+}
+
+@keyframes circle-cyan-thin-scale {
+    0% { scale: 0; }
+    48% { scale: 1.15; }
+    66% { scale: .85; }
+    80% { scale: 1.125; }
+    91% { scale: .975; }
+    98% { scale: 1.025; }
+    100% { scale: 1; }
 }
 
 #circle-cyan-thin svg {
@@ -428,12 +464,14 @@ main > * {
     stroke-dasharray: 103% 6% 21% 12% 88% 19% 22% 1000%;
 }
 
-/*===== CIRCLES - Cyan Thin =====*/
+/*===== CIRCLES - Orange Thin =====*/
 #circle-orange-thin {
-    animation: circle-orange-thin 20s linear infinite;
+    scale: 0;
+    animation: circle-orange-thin-rotation 20s linear infinite,
+               circle-orange-thin-scale 1.25s ease-in-out .2s 1 forwards;
 }
 
-@keyframes circle-orange-thin {
+@keyframes circle-orange-thin-rotation {
     from {
         rotate: -45deg;
     }
@@ -441,6 +479,16 @@ main > * {
     to {
         rotate: 315deg;
     }
+}
+
+@keyframes circle-orange-thin-scale {
+    0% { scale: 0; }
+    52% { scale: 1.15; }
+    68% { scale: .85; }
+    82% { scale: 1.125; }
+    93% { scale: .975; }
+    99% { scale: 1.025; }
+    100% { scale: 1; }
 }
 
 #circle-orange-thin svg {
@@ -455,10 +503,12 @@ main > * {
 
 /*===== CIRCLES - Cyan Medium =====*/
 #circle-cyan-medium {
-    animation: circle-cyan-medium 20s linear infinite;
+    scale: 0;
+    animation: circle-cyan-medium-rotation 20s linear infinite,
+               circle-cyan-medium-scale 1.25s ease-in-out .2s 1 forwards;
 }
 
-@keyframes circle-cyan-medium {
+@keyframes circle-cyan-medium-rotation {
     from {
         rotate: 270deg;
     }
@@ -466,6 +516,16 @@ main > * {
     to {
         rotate: -90deg;
     }
+}
+
+@keyframes circle-cyan-medium-scale {
+    0% { scale: 0; }
+    56% { scale: 1.15; }
+    71% { scale: .85; }
+    84% { scale: 1.125; }
+    94% { scale: .975; }
+    99.5% { scale: 1.025; }
+    100% { scale: 1; }
 }
 
 #circle-cyan-medium svg {
@@ -477,6 +537,21 @@ main > * {
     stroke: #2cefe1;
     stroke-width: 4.6%;
     stroke-dasharray: 269% 1000%;
+}
+
+/* FULL LOGO */
+#full-logo {
+    animation: full-logo-scale 1s ease-in-out 1 forwards;
+}
+
+@keyframes full-logo-scale {
+    0% { scale: 0; }
+    56% { scale: 1.15; }
+    71% { scale: .85; }
+    84% { scale: 1.125; }
+    94% { scale: .975; }
+    99.5% { scale: 1.025; }
+    100% { scale: 1; }
 }
 
 /*===== CIRCLES - Orange (Thin) / Magenta (Thin) =====*/
