@@ -1,4 +1,6 @@
 /*===== GLOBALS =====*/
+@import url("font/font.css");
+
 html,
 body {
     height: 100%;
@@ -25,11 +27,11 @@ main > * {
 }
 
 @keyframes background {
-    from {
+    0% {
         background-position: 0 0;
     }
 
-    to {
+    100% {
         background-position: 23vh 23vh;
     }
 }
@@ -66,12 +68,28 @@ main > * {
     scale: 0;
 }
 
+.circles-outer svg {
+    position: absolute;
+    scale: 1.24;
+}
+
+
+#circle-orange {
+    animation: circle-outer-rotation 20s linear infinite,
+               circle-orange-scale 1.25s ease-in-out .2s 1 forwards;
+}
+
+#circle-magenta {
+    animation: circle-outer-rotation 20s linear infinite,
+               circle-magenta-scale 1.25s ease-in-out .2s 1 forwards;
+}
+
 @keyframes circle-outer-rotation {
-    from {
+    0% {
         rotate: 360deg;
     }
 
-    to {
+    100% {
         rotate: 0;
     }
 }
@@ -94,22 +112,6 @@ main > * {
     88% { scale: .975; }
     95% { scale: 1.025; }
     100% { scale: 1; }
-}
-
-.circles-outer svg {
-    position: absolute;
-    scale: 1.24;
-}
-
-
-#circle-orange {
-    animation: circle-outer-rotation 20s linear infinite,
-               circle-orange-scale 1.25s ease-in-out .2s 1 forwards;
-}
-
-#circle-magenta {
-    animation: circle-outer-rotation 20s linear infinite,
-               circle-magenta-scale 1.25s ease-in-out .2s 1 forwards;
 }
 
 /*===== CIRCLE - Outer (Orange) =====*/
@@ -146,6 +148,7 @@ main > * {
 #circle-outer-shadow-over-magenta {
     rotate: 1.5deg;
     filter: blur(1px);
+    opacity: .4;
 }
 
 #circle-outer-shadow-over-magenta #outer-shadow-over-magenta-bg {
@@ -367,11 +370,11 @@ main > * {
 }
 
 @keyframes circle-cyan-thick-rotation {
-    from {
+    0% {
         rotate: -90deg;
     }
     
-    to {
+    100% {
         rotate: 270deg;
     }
 }
@@ -453,11 +456,11 @@ main > * {
 }
 
 @keyframes circle-cyan-thin-rotation {
-    from {
+    0% {
         rotate: 315deg;
     }
 
-    to {
+    100% {
         rotate: -45deg;
     }
 }
@@ -491,11 +494,11 @@ main > * {
 }
 
 @keyframes circle-orange-thin-rotation {
-    from {
+    0% {
         rotate: -45deg;
     }
 
-    to {
+    100% {
         rotate: 315deg;
     }
 }
@@ -528,11 +531,11 @@ main > * {
 }
 
 @keyframes circle-cyan-medium-rotation {
-    from {
+    0% {
         rotate: 270deg;
     }
 
-    to {
+    100% {
         rotate: -90deg;
     }
 }
@@ -684,3 +687,32 @@ main > * {
 .spark-container:nth-child(6) {top: 85%; left: 15%; rotate: 235deg;}
 .spark-container:nth-child(7) {left: 5%; rotate: 270deg;}
 .spark-container:nth-child(8) {top: 15%; left: 15%; rotate: 315deg;}
+
+/*===== START =====*/
+#start-wrapper {
+    display: grid;
+    place-items: end center;
+    width: 44.2%;
+    aspect-ratio: 1;
+}
+
+#start-wrapper span {
+    font-family: "Titan One";
+    color: white;
+    text-shadow: 0.1vw 0.1vw 0.1vw rgba(0,0,0,0.3);
+    font-size: 1.45vw;
+    letter-spacing: .05vw;
+    text-transform: uppercase;
+    scale: 0;
+    animation: start-scale .3s linear .7s forwards;
+}
+
+@keyframes start-scale {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
