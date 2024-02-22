@@ -62,10 +62,8 @@ main > * {
 }
 
 /*===== CIRCLES - Outer =====*/
-#circles-outer {
+.circles-outer {
     scale: 0;
-    animation: circle-outer-rotation 20s linear infinite,
-               circle-outer-scale 1.25s ease-in-out .2s 1 forwards;
 }
 
 @keyframes circle-outer-rotation {
@@ -78,7 +76,7 @@ main > * {
     }
 }
 
-@keyframes circle-outer-scale {
+@keyframes circle-orange-scale {
     0% { scale: 0; }
     40% { scale: 1.25; }
     59% { scale: .9; }
@@ -88,9 +86,30 @@ main > * {
     100% { scale: 1; }
 }
 
-#circles-outer svg {
+@keyframes circle-magenta-scale {
+    0% { scale: 0; }
+    38% { scale: 1.25; }
+    62% { scale: .9; }
+    78% { scale: 1.125; }
+    88% { scale: .975; }
+    95% { scale: 1.025; }
+    100% { scale: 1; }
+}
+
+.circles-outer svg {
     position: absolute;
     scale: 1.24;
+}
+
+
+#circle-orange {
+    animation: circle-outer-rotation 20s linear infinite,
+               circle-orange-scale 1.25s ease-in-out .2s 1 forwards;
+}
+
+#circle-magenta {
+    animation: circle-outer-rotation 20s linear infinite,
+               circle-magenta-scale 1.25s ease-in-out .2s 1 forwards;
 }
 
 /*===== CIRCLE - Outer (Orange) =====*/
