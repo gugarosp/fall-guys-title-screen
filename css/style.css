@@ -726,7 +726,7 @@ main > * {
     display: grid;
     place-items: end center;
     aspect-ratio: 1;
-    width: 63%;
+    width: 60%;
     text-align: center;
 }
 
@@ -737,4 +737,5 @@ main > * {
     letter-spacing: .05vw;
     opacity: .3;
     line-height: 1.2;
+    user-select: none;
 }
