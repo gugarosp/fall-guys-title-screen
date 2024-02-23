@@ -87,11 +87,11 @@ main > * {
 
 @keyframes circle-outer-rotation {
     0% {
-        rotate: 360deg;
+        rotate: 215deg;
     }
 
     100% {
-        rotate: 0;
+        rotate: -145deg;
     }
 }
 
@@ -372,11 +372,11 @@ main > * {
 
 @keyframes circle-cyan-thick-rotation {
     0% {
-        rotate: -90deg;
+        rotate: -205deg;
     }
     
     100% {
-        rotate: 270deg;
+        rotate: 155deg;
     }
 }
 
@@ -458,11 +458,11 @@ main > * {
 
 @keyframes circle-cyan-thin-rotation {
     0% {
-        rotate: 315deg;
+        rotate: 240deg;
     }
 
     100% {
-        rotate: -45deg;
+        rotate: -120deg;
     }
 }
 
@@ -496,11 +496,11 @@ main > * {
 
 @keyframes circle-orange-thin-rotation {
     0% {
-        rotate: -45deg;
+        rotate: -125deg;
     }
 
     100% {
-        rotate: 315deg;
+        rotate: 235deg;
     }
 }
 
@@ -533,11 +533,11 @@ main > * {
 
 @keyframes circle-cyan-medium-rotation {
     0% {
-        rotate: 270deg;
+        rotate: 15deg;
     }
 
     100% {
-        rotate: -90deg;
+        rotate: -345deg;
     }
 }
 
