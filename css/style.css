@@ -51,6 +51,7 @@ main > * {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: -8%;
 }
 
 /*===== CIRCLES =====*/
@@ -565,6 +566,10 @@ main > * {
 #full-logo {
     animation: full-logo-scale 1s ease-in-out 1 forwards;
 }
+#full-logo.content {
+    top: 0;
+}
+
 
 @keyframes full-logo-scale {
     0% { scale: 0; }
@@ -629,7 +634,6 @@ main > * {
     position: relative;
     width: 50%;
     aspect-ratio: 1;
-    /* background: #ff000050; */
     scale: 0;
     animation: sparks-wrapper-scale .4s ease-out .5s forwards;
 }
@@ -715,4 +719,22 @@ main > * {
     100% {
         scale: 1;
     }
+}
+
+/* Copyright */
+#copyright-wrapper {
+    display: grid;
+    place-items: end center;
+    aspect-ratio: 1;
+    width: 63%;
+    text-align: center;
+}
+
+#copyright-wrapper span {
+    font-family: "Titan One";
+    color: black;
+    font-size: .75vw;
+    letter-spacing: .05vw;
+    opacity: .3;
+    line-height: 1.2;
 }
