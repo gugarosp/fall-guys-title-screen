@@ -126,6 +126,12 @@ main > * {
     height: 100%;
 }
 
+#circle-outer-orange #outer-orange-strange-bg {
+    fill: #feda61;
+    width: 7%;
+    height: 100%;
+}
+
 #circle-outer-orange image {
     width: 35%;
     height: 100%;
