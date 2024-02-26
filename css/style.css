@@ -5,19 +5,65 @@ html,
 body {
     height: 100%;
     margin: 0;
+    position: relative;
 }
 
-main {
-    position: relative;
+section {
+    position: absolute;
+    width: 100%;
     height: 100%;
+}
+
+/* ===== PARTNERS ===== */
+#partners {
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(#33c9ea, #18a3da);
+    background-size: contain;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#partners-wrapper {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    width: 95%;
+    aspect-ratio: 16 / 6.5;
+}
+
+#partners-wrapper div {
+    display: grid;
+    place-items: center;
+}
+
+#partners-wrapper img {
+    width: 69%;
+    aspect-ratio: 2 / 1;
+    object-fit: contain;
+}
+
+#partners-wrapper div:nth-child(1) img {translate: -1% -2%; scale: .98;}
+#partners-wrapper div:nth-child(2) img {translate: 0 -6%; scale: 1.08;}
+#partners-wrapper div:nth-child(3) img {translate: 1% -3%; scale: .9;}
+#partners-wrapper div:nth-child(4) img {translate: 9% 0;}
+#partners-wrapper div:nth-child(5) img {translate: 0 -2%;}
+#partners-wrapper div:nth-child(6) img {translate: 1% 10%; scale: .95;}
+#partners-wrapper div:nth-child(7) img {translate: -4% -1%; scale: .77;}
+#partners-wrapper div:nth-child(8) img {translate: 0 2%; scale: .95;}
+#partners-wrapper div:nth-child(9) img {translate: 1% 2%;}
+
+/* ===== TITLE SCREEN ===== */
+#title-screen {
     background-image: linear-gradient(#125dee, #31fbe5);
 }
 
-main > * {
+#title-screen > * {
     height: 100%;
 }
 
-/*===== BACKGROUND =====*/
+/*===== TITLE SCREEN - BACKGROUND =====*/
 #background {
     background-image: url("../image/background.svg");
     background-size: 23vh;
@@ -35,7 +81,7 @@ main > * {
     }
 }
 
-/*===== SCREEN =====*/
+/*===== TITLE SCREEN - SCREEN =====*/
 #screen {
     position: absolute;
     top: 0;
@@ -53,7 +99,7 @@ main > * {
     top: -8%;
 }
 
-/*===== CIRCLES =====*/
+/*===== TITLE SCREEN - CIRCLES =====*/
 .circles svg {
     aspect-ratio: 1;
 }
@@ -63,7 +109,7 @@ main > * {
     stroke-linecap: round;
 }
 
-/*===== CIRCLES - Outer =====*/
+/*===== TITLE SCREEN - CIRCLES - Outer =====*/
 .circles-outer {
     scale: 0;
 }
@@ -73,7 +119,7 @@ main > * {
     scale: 1.24;
 }
 
-/*===== CIRCLE - Outer (Orange) =====*/
+/*===== TITLE SCREEN - CIRCLE - Outer (Orange) =====*/
 #circle-outer-orange {
     stroke-width: 10%;
 }
@@ -109,7 +155,7 @@ main > * {
     stroke: url(#orange-halftone);
 }
 
-/*===== CIRCLE - Outer (Shadow Over Magenta) =====*/
+/*===== TITLE SCREEN - CIRCLE - Outer (Shadow Over Magenta) =====*/
 #circle-outer-shadow-over-magenta {
     rotate: 1.5deg;
     filter: blur(1px);
@@ -145,7 +191,7 @@ main > * {
     stroke-linecap: square;
 }
 
-/*===== CIRCLE - Outer (Magenta) =====*/
+/*===== TITLE SCREEN - CIRCLE - Outer (Magenta) =====*/
 #circle-outer-magenta #outer-magenta-bg {
     width: 100%;
     height: 100%;
@@ -327,7 +373,7 @@ main > * {
     stroke-dasharray: 194%;
 }
 
-/*===== CIRCLES - Cyan Thick/Cyan Shadow =====*/
+/*===== TITLE SCREEN - CIRCLES - Cyan Thick/Cyan Shadow =====*/
 #circle-cyan {
     scale: 0;
 }
@@ -391,7 +437,7 @@ main > * {
 #circle-cyan-thick-shadow image:nth-of-type(3) {x: 42%; y: 35%;}
 #circle-cyan-thick-shadow image:nth-of-type(4) {x: 76%; y: 31%;}
 
-/*===== CIRCLES - Cyan Thin =====*/
+/*===== TITLE SCREEN - CIRCLES - Cyan Thin =====*/
 #circle-cyan-thin {
     scale: 0;
 }
@@ -417,7 +463,7 @@ main > * {
     stroke-dasharray: 103% 6% 21% 12% 88% 19% 22% 1000%;
 }
 
-/*===== CIRCLES - Orange Thin =====*/
+/*===== TITLE SCREEN - CIRCLES - Orange Thin =====*/
 #circle-orange-thin {
     scale: 0;
 }
@@ -432,7 +478,7 @@ main > * {
     stroke-dasharray: 102% 6% 22% 11% 90% 18% 22% 1000%;
 }
 
-/*===== CIRCLES - Cyan Medium =====*/
+/*===== TITLE SCREEN - CIRCLES - Cyan Medium =====*/
 #circle-cyan-medium {
     scale: 0;
 }
@@ -448,12 +494,12 @@ main > * {
     stroke-dasharray: 269% 1000%;
 }
 
-/* FULL LOGO */
+/*===== TITLE SCREEN -  FULL LOGO ==== */
 #full-logo.content {
     top: 0;
 }
 
-/*===== CIRCLES - Logo =====*/
+/*===== TITLE SCREEN -  CIRCLES - Logo =====*/
 #circles-logo {
     rotate: 5deg;
     top: 1.1%;
@@ -491,7 +537,7 @@ main > * {
     stroke-width: 2%;
 }
 
-/*===== LOGO =====*/
+/*===== TITLE SCREEN - LOGO =====*/
 #logo {
     top: .7%;
     left: .7%;
@@ -501,7 +547,7 @@ main > * {
     width: 22.9%;
 }
 
-/*===== LOGO SPARKS =====*/
+/*===== TITLE SCREEN - LOGO SPARKS =====*/
 .sparks-wrapper {
     position: relative;
     width: 50%;
@@ -538,7 +584,7 @@ main > * {
 .spark-container:nth-child(7) {left: 5%; rotate: 270deg;}
 .spark-container:nth-child(8) {top: 15%; left: 15%; rotate: 315deg;}
 
-/*===== START =====*/
+/*===== TITLE SCREEN - START =====*/
 #start-wrapper {
     display: grid;
     place-items: end center;
@@ -556,7 +602,7 @@ main > * {
     scale: 0;
 }
 
-/*===== COPYRIGHT  =====*/
+/*===== TITLE SCREEN - COPYRIGHT  =====*/
 #copyright-wrapper {
     display: grid;
     place-items: end center;
@@ -575,7 +621,7 @@ main > * {
     user-select: none;
 }
 
-/*===== ANIMATIONS =====*/
+/*===== TITLE SCREEN - ANIMATIONS =====*/
 #background {
     animation: background 10s linear infinite;
 }
