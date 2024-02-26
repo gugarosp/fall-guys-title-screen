@@ -65,7 +65,7 @@ section {
 
 /*===== TITLE SCREEN - BACKGROUND =====*/
 #background {
-    background-image: url("../image/background.svg");
+    background-image: url("../image/title-screen/background.svg");
     background-size: 23vh;
     background-position: 0 0;
     opacity: .1;
