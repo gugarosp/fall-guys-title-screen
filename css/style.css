@@ -1,6 +1,10 @@
 /*===== GLOBALS =====*/
 @import url("font/font.css");
 
+* {
+    user-select: none;
+}
+
 html,
 body {
     height: 100%;
@@ -618,7 +622,6 @@ section {
     letter-spacing: .05vw;
     opacity: .3;
     line-height: 1.2;
-    user-select: none;
 }
 
 /*===== TITLE SCREEN - ANIMATIONS =====*/
