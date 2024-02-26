@@ -23,7 +23,6 @@ main > * {
     background-size: 23vh;
     background-position: 0 0;
     opacity: .1;
-    animation: background 10s linear infinite;
 }
 
 @keyframes background {
@@ -72,47 +71,6 @@ main > * {
 .circles-outer svg {
     position: absolute;
     scale: 1.24;
-}
-
-
-#circle-orange {
-    animation: circle-outer-rotation 20s linear infinite,
-               circle-orange-scale 1.25s ease-in-out .2s 1 forwards;
-}
-
-#circle-magenta {
-    animation: circle-outer-rotation 20s linear infinite,
-               circle-magenta-scale 1.25s ease-in-out .2s 1 forwards;
-}
-
-@keyframes circle-outer-rotation {
-    0% {
-        rotate: 215deg;
-    }
-
-    100% {
-        rotate: -145deg;
-    }
-}
-
-@keyframes circle-orange-scale {
-    0% { scale: 0; }
-    40% { scale: 1.25; }
-    59% { scale: .9; }
-    76% { scale: 1.125; }
-    87% { scale: .975; }
-    94% { scale: 1.025; }
-    100% { scale: 1; }
-}
-
-@keyframes circle-magenta-scale {
-    0% { scale: 0; }
-    38% { scale: 1.25; }
-    62% { scale: .9; }
-    78% { scale: 1.125; }
-    88% { scale: .975; }
-    95% { scale: 1.025; }
-    100% { scale: 1; }
 }
 
 /*===== CIRCLE - Outer (Orange) =====*/
@@ -372,28 +330,6 @@ main > * {
 /*===== CIRCLES - Cyan Thick/Cyan Shadow =====*/
 #circle-cyan {
     scale: 0;
-    animation: circle-cyan-thick-rotation 20s linear infinite,
-                circle-cyan-thick-scale 1.25s ease-in-out .2s 1 forwards;
-}
-
-@keyframes circle-cyan-thick-rotation {
-    0% {
-        rotate: -205deg;
-    }
-    
-    100% {
-        rotate: 155deg;
-    }
-}
-
-@keyframes circle-cyan-thick-scale {
-    0% { scale: 0; }
-    45% { scale: 1.15; }
-    63% { scale: .85; }
-    78% { scale: 1.125; }
-    89% { scale: .975; }
-    97% { scale: 1.025; }
-    100% { scale: 1; }
 }
 
 #circle-cyan svg {
@@ -458,18 +394,6 @@ main > * {
 /*===== CIRCLES - Cyan Thin =====*/
 #circle-cyan-thin {
     scale: 0;
-    animation: circle-cyan-thin-rotation 20s linear infinite,
-               circle-cyan-thin-scale 1.25s ease-in-out .2s 1 forwards;
-}
-
-@keyframes circle-cyan-thin-rotation {
-    0% {
-        rotate: 240deg;
-    }
-
-    100% {
-        rotate: -120deg;
-    }
 }
 
 @keyframes circle-cyan-thin-scale {
@@ -496,28 +420,6 @@ main > * {
 /*===== CIRCLES - Orange Thin =====*/
 #circle-orange-thin {
     scale: 0;
-    animation: circle-orange-thin-rotation 20s linear infinite,
-               circle-orange-thin-scale 1.25s ease-in-out .2s 1 forwards;
-}
-
-@keyframes circle-orange-thin-rotation {
-    0% {
-        rotate: -125deg;
-    }
-
-    100% {
-        rotate: 235deg;
-    }
-}
-
-@keyframes circle-orange-thin-scale {
-    0% { scale: 0; }
-    52% { scale: 1.15; }
-    68% { scale: .85; }
-    82% { scale: 1.125; }
-    93% { scale: .975; }
-    99% { scale: 1.025; }
-    100% { scale: 1; }
 }
 
 #circle-orange-thin svg {
@@ -533,28 +435,6 @@ main > * {
 /*===== CIRCLES - Cyan Medium =====*/
 #circle-cyan-medium {
     scale: 0;
-    animation: circle-cyan-medium-rotation 20s linear infinite,
-               circle-cyan-medium-scale 1.25s ease-in-out .2s 1 forwards;
-}
-
-@keyframes circle-cyan-medium-rotation {
-    0% {
-        rotate: 15deg;
-    }
-
-    100% {
-        rotate: -345deg;
-    }
-}
-
-@keyframes circle-cyan-medium-scale {
-    0% { scale: 0; }
-    56% { scale: 1.15; }
-    71% { scale: .85; }
-    84% { scale: 1.125; }
-    94% { scale: .975; }
-    99.5% { scale: 1.025; }
-    100% { scale: 1; }
 }
 
 #circle-cyan-medium svg {
@@ -569,22 +449,8 @@ main > * {
 }
 
 /* FULL LOGO */
-#full-logo {
-    animation: full-logo-scale 1s ease-in-out 1 forwards;
-}
 #full-logo.content {
     top: 0;
-}
-
-
-@keyframes full-logo-scale {
-    0% { scale: 0; }
-    56% { scale: 1.15; }
-    71% { scale: .85; }
-    84% { scale: 1.125; }
-    94% { scale: .975; }
-    99.5% { scale: 1.025; }
-    100% { scale: 1; }
 }
 
 /*===== CIRCLES - Logo =====*/
@@ -641,17 +507,6 @@ main > * {
     width: 50%;
     aspect-ratio: 1;
     scale: 0;
-    animation: sparks-wrapper-scale .4s ease-out .5s forwards;
-}
-
-@keyframes sparks-wrapper-scale {
-    0% {
-        scale: 0;
-    }
-
-    100% {
-        scale: 1;
-    }
 }
 
 .spark-container {
@@ -672,21 +527,6 @@ main > * {
     transform: rotateX(92deg);
     border-radius: 999999px;
     scale: 0;
-    animation: spark-scale .4s ease-out .5s forwards;
-}
-
-@keyframes spark-scale {
-    0% {
-        scale: 0;
-    }
-
-    80% {
-        scale: 1;
-    }
-
-    100% {
-        scale: 0;
-    }
 }
 
 .spark-container:nth-child(1) {top: 5%}
@@ -714,20 +554,9 @@ main > * {
     letter-spacing: .05vw;
     text-transform: uppercase;
     scale: 0;
-    animation: start-scale .3s linear .7s forwards;
 }
 
-@keyframes start-scale {
-    0% {
-        scale: 0;
-    }
-
-    100% {
-        scale: 1;
-    }
-}
-
-/* Copyright */
+/*===== COPYRIGHT  =====*/
 #copyright-wrapper {
     display: grid;
     place-items: end center;
@@ -744,4 +573,209 @@ main > * {
     opacity: .3;
     line-height: 1.2;
     user-select: none;
+}
+
+/*===== ANIMATIONS =====*/
+#background {
+    animation: background 10s linear infinite;
+}
+
+@keyframes background {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 23vh 23vh;
+    }
+}
+
+#circle-orange {
+    animation: circle-outer-rotation 20s linear infinite,
+               circle-orange-scale 1.25s ease-in-out .2s 1 forwards;
+}
+
+#circle-magenta {
+    animation: circle-outer-rotation 20s linear infinite,
+               circle-magenta-scale 1.25s ease-in-out .2s 1 forwards;
+}
+
+@keyframes circle-outer-rotation {
+    0% {
+        rotate: 215deg;
+    }
+
+    100% {
+        rotate: -145deg;
+    }
+}
+
+@keyframes circle-orange-scale {
+    0% { scale: 0; }
+    40% { scale: 1.25; }
+    59% { scale: .9; }
+    76% { scale: 1.125; }
+    87% { scale: .975; }
+    94% { scale: 1.025; }
+    100% { scale: 1; }
+}
+
+@keyframes circle-magenta-scale {
+    0% { scale: 0; }
+    38% { scale: 1.25; }
+    62% { scale: .9; }
+    78% { scale: 1.125; }
+    88% { scale: .975; }
+    95% { scale: 1.025; }
+    100% { scale: 1; }
+}
+
+#circle-cyan {
+    animation: circle-cyan-thick-rotation 20s linear infinite,
+               circle-cyan-thick-scale 1.25s ease-in-out .2s 1 forwards;
+}
+
+@keyframes circle-cyan-thick-rotation {
+        0% {
+        rotate: -205deg;
+        }
+
+    100% {
+        rotate: 155deg;
+    }
+}
+
+@keyframes circle-cyan-thick-scale {
+    0% { scale: 0; }
+    45% { scale: 1.15; }
+    63% { scale: .85; }
+    78% { scale: 1.125; }
+    89% { scale: .975; }
+    97% { scale: 1.025; }
+    100% { scale: 1; }
+}
+
+#circle-cyan-thin {
+    animation: circle-cyan-thin-rotation 20s linear infinite,
+               circle-cyan-thin-scale 1.25s ease-in-out .2s 1 forwards;
+}
+
+@keyframes circle-cyan-thin-rotation {
+    0% {
+        rotate: 240deg;
+    }
+
+    100% {
+        rotate: -120deg;
+    }
+}
+
+#circle-orange-thin {
+    animation: circle-orange-thin-rotation 20s linear infinite,
+               circle-orange-thin-scale 1.25s ease-in-out .2s 1 forwards;
+}
+
+@keyframes circle-orange-thin-rotation {
+    0% {
+        rotate: -125deg;
+    }
+
+    100% {
+        rotate: 235deg;
+    }
+}
+
+@keyframes circle-orange-thin-scale {
+    0% { scale: 0; }
+    52% { scale: 1.15; }
+    68% { scale: .85; }
+    82% { scale: 1.125; }
+    93% { scale: .975; }
+    99% { scale: 1.025; }
+    100% { scale: 1; }
+}
+
+#circle-cyan-medium {
+    animation: circle-cyan-medium-rotation 20s linear infinite,
+               circle-cyan-medium-scale 1.25s ease-in-out .2s 1 forwards;
+}
+
+@keyframes circle-cyan-medium-rotation {
+    0% {
+        rotate: 15deg;
+    }
+
+    100% {
+        rotate: -345deg;
+    }
+}
+
+@keyframes circle-cyan-medium-scale {
+    0% { scale: 0; }
+    56% { scale: 1.15; }
+    71% { scale: .85; }
+    84% { scale: 1.125; }
+    94% { scale: .975; }
+    99.5% { scale: 1.025; }
+    100% { scale: 1; }
+}
+
+#full-logo {
+    animation: full-logo-scale 1s ease-in-out 1 forwards;
+}
+
+@keyframes full-logo-scale {
+    0% { scale: 0; }
+    56% { scale: 1.15; }
+    71% { scale: .85; }
+    84% { scale: 1.125; }
+    94% { scale: .975; }
+    99.5% { scale: 1.025; }
+    100% { scale: 1; }
+}
+
+.sparks-wrapper {
+    animation: sparks-wrapper-scale .4s ease-out .5s forwards;
+}
+
+@keyframes sparks-wrapper-scale {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.spark {
+    animation: spark-scale .4s ease-out .5s forwards;
+}
+
+@keyframes spark-scale {
+    0% {
+        scale: 0;
+    }
+
+    80% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 0;
+    }
+}
+
+#start-wrapper span {
+    animation: start-scale .3s linear .7s forwards;
+}
+
+@keyframes start-scale {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
