@@ -23,7 +23,7 @@ section {
     display: grid;
     place-items: center;
     overflow: hidden;
-    background-image: linear-gradient(#33c9ea, #18a3da);
+    background-image: linear-gradient(#33c9ea, #19a4dc);
 }
 
 #fall-guy-face-container, 
@@ -137,7 +137,7 @@ section {
 
 #partners-container div:nth-child(1) img {translate: -1% -2%; scale: .98;}
 #partners-container div:nth-child(2) img {translate: 0 -6%; scale: 1.08;}
-#partners-container div:nth-child(3) img {translate: 1% -3%; scale: .9;}
+#partners-container div:nth-child(3) img {translate: 1% 0%; scale: .9;}
 #partners-container div:nth-child(4) img {translate: 9% 0;}
 #partners-container div:nth-child(5) img {translate: 0 -2%;}
 #partners-container div:nth-child(6) img {translate: 1% 10%; scale: .95;}
