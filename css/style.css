@@ -25,6 +25,7 @@ section {
     place-items: center;
     overflow: hidden;
     background-image: linear-gradient(#33c9ea, #19a4dc);
+    display: none;
 }
 
 #fall-guy-face-container, 
@@ -60,7 +61,7 @@ section {
 }
 
 @keyframes hide-screen {
-    100% {display: none;}
+    100% {display: none; visibility: hidden;}
 }
 
 @keyframes fade-screen {
@@ -205,13 +206,8 @@ section {
 }
 
 @keyframes background {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 23vh 23vh;
-    }
+    0% {background-position: 0 0;}
+    100% {background-position: 23vh 23vh;}
 }
 
 /*===== TITLE SCREEN - SCREEN =====*/
@@ -637,12 +633,8 @@ section {
 }
 
 /*===== TITLE SCREEN -  CIRCLES - Logo =====*/
-#circles-logo {
-    rotate: 5deg;
-    top: 1.1%;
-}
-
 #circles-logo svg {
+    rotate: 5deg;
     position: absolute;
     width: 31%;
 }
@@ -675,8 +667,8 @@ section {
 }
 
 /*===== TITLE SCREEN - LOGO =====*/
-#logo {
-    top: .7%;
+#logo.content {
+    top: 0%;
     left: .7%;
 }
 
@@ -763,13 +755,8 @@ section {
 }
 
 @keyframes background {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 23vh 23vh;
-    }
+    0% {background-position: 0 0;}
+    100% {background-position: 23vh 23vh;}
 }
 
 #circle-orange {
@@ -783,33 +770,28 @@ section {
 }
 
 @keyframes circle-outer-rotation {
-    0% {
-        rotate: 215deg;
-    }
-
-    100% {
-        rotate: -145deg;
-    }
+    0% {rotate: 215deg;}
+    100% {rotate: -145deg;}
 }
 
 @keyframes circle-orange-scale {
-    0% { scale: 0; }
-    40% { scale: 1.25; }
-    59% { scale: .9; }
-    76% { scale: 1.125; }
-    87% { scale: .975; }
-    94% { scale: 1.025; }
-    100% { scale: 1; }
+    0% {scale: 0;}
+    40% {scale: 1.25;}
+    59% {scale: .9;}
+    76% {scale: 1.125;}
+    87% {scale: .975;}
+    94% {scale: 1.025;}
+    100% {scale: 1;}
 }
 
 @keyframes circle-magenta-scale {
-    0% { scale: 0; }
-    38% { scale: 1.25; }
-    62% { scale: .9; }
-    78% { scale: 1.125; }
-    88% { scale: .975; }
-    95% { scale: 1.025; }
-    100% { scale: 1; }
+    0% {scale: 0;}
+    38% {scale: 1.25;}
+    62% {scale: .9;}
+    78% {scale: 1.125;}
+    88% {scale: .975;}
+    95% {scale: 1.025;}
+    100% {scale: 1;}
 }
 
 #circle-cyan {
@@ -818,23 +800,18 @@ section {
 }
 
 @keyframes circle-cyan-thick-rotation {
-        0% {
-        rotate: -205deg;
-        }
-
-    100% {
-        rotate: 155deg;
-    }
+    0% {rotate: -205deg;}
+    100% {rotate: 155deg;}
 }
 
 @keyframes circle-cyan-thick-scale {
-    0% { scale: 0; }
-    45% { scale: 1.15; }
-    63% { scale: .85; }
-    78% { scale: 1.125; }
-    89% { scale: .975; }
-    97% { scale: 1.025; }
-    100% { scale: 1; }
+    0% {scale: 0;}
+    45% {scale: 1.15;}
+    63% {scale: .85;}
+    78% {scale: 1.125;}
+    89% {scale: .975;}
+    97% {scale: 1.025;}
+    100% {scale: 1;}
 }
 
 #circle-cyan-thin {
@@ -843,13 +820,8 @@ section {
 }
 
 @keyframes circle-cyan-thin-rotation {
-    0% {
-        rotate: 240deg;
-    }
-
-    100% {
-        rotate: -120deg;
-    }
+    0% {rotate: 240deg;}
+    100% {rotate: -120deg;}
 }
 
 #circle-orange-thin {
@@ -858,23 +830,18 @@ section {
 }
 
 @keyframes circle-orange-thin-rotation {
-    0% {
-        rotate: -125deg;
-    }
-
-    100% {
-        rotate: 235deg;
-    }
+    0% {rotate: -125deg;}
+    100% {rotate: 235deg;}
 }
 
 @keyframes circle-orange-thin-scale {
-    0% { scale: 0; }
-    52% { scale: 1.15; }
-    68% { scale: .85; }
-    82% { scale: 1.125; }
-    93% { scale: .975; }
-    99% { scale: 1.025; }
-    100% { scale: 1; }
+    0% {scale: 0;}
+    52% {scale: 1.15;}
+    68% {scale: .85;}
+    82% {scale: 1.125;}
+    93% {scale: .975;}
+    99% {scale: 1.025;}
+    100% {scale: 1;}
 }
 
 #circle-cyan-medium {
@@ -883,37 +850,32 @@ section {
 }
 
 @keyframes circle-cyan-medium-rotation {
-    0% {
-        rotate: 15deg;
-    }
-
-    100% {
-        rotate: -345deg;
-    }
+    0% {rotate: 15deg;}
+    100% {rotate: -345deg;}
 }
 
 @keyframes circle-cyan-medium-scale {
-    0% { scale: 0; }
-    56% { scale: 1.15; }
-    71% { scale: .85; }
-    84% { scale: 1.125; }
-    94% { scale: .975; }
-    99.5% { scale: 1.025; }
-    100% { scale: 1; }
+    0% {scale: 0;}
+    56% {scale: 1.15;}
+    71% {scale: .85;}
+    84% {scale: 1.125;}
+    94% {scale: .975;}
+    99.5% {scale: 1.025;}
+    100% {scale: 1;}
 }
 
 #full-logo {
-    animation: full-logo-scale 1s ease-in-out 6s forwards;
+    animation: full-logo-scale 1s ease-in-out 6s 1 forwards;
 }
 
 @keyframes full-logo-scale {
-    0% { scale: 0; }
-    56% { scale: 1.15; }
-    71% { scale: .85; }
-    84% { scale: 1.125; }
-    94% { scale: .975; }
-    99.5% { scale: 1.025; }
-    100% { scale: 1; }
+    0% {scale: 0;}
+    56% {scale: 1.15;}
+    71% {scale: .85;}
+    84% {scale: 1.125;}
+    94% {scale: .975;}
+    99.5% {scale: 1.025;}
+    100% {scale: 1;}
 }
 
 .sparks-wrapper {
@@ -921,13 +883,8 @@ section {
 }
 
 @keyframes sparks-wrapper-scale {
-    0% {
-        scale: 0;
-    }
-
-    100% {
-        scale: 1;
-    }
+    0% {scale: 0;}
+    100% {scale: 1;}
 }
 
 .spark {
@@ -935,17 +892,9 @@ section {
 }
 
 @keyframes spark-scale {
-    0% {
-        scale: 0;
-    }
-
-    80% {
-        scale: 1;
-    }
-
-    100% {
-        scale: 0;
-    }
+    0% {scale: 0;}
+    80% {scale: 1;}
+    100% {scale: 0;}
 }
 
 #start-wrapper span {
@@ -953,11 +902,6 @@ section {
 }
 
 @keyframes start-scale {
-    0% {
-        scale: 0;
-    }
-
-    100% {
-        scale: 1;
-    }
+    0% {scale: 0;}
+    100% {scale: 1;}
 }
