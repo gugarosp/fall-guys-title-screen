@@ -18,6 +18,7 @@ section {
     height: 100%;
 }
 
+/* ===== FALL GUY FACE / PARTNERS ===== */
 #fall-guy-face, 
 #partners {
     display: grid;
@@ -29,7 +30,44 @@ section {
 #fall-guy-face-container, 
 #partners-container {
     gap: 5%;
-    width: 95%;
+}
+
+#fall-guy-face-container::after, 
+#partners-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+/* ===== FALL GUY FACE / PARTNERS - Animations ===== */
+#fall-guy-face, 
+#partners {
+    animation: hide-screen 3s linear forwards;
+}
+
+#fall-guy-face-container::after, 
+#partners-container::after {
+    animation: fade-screen 3s linear forwards;
+}
+
+#partners,
+#partners-container::after {
+    animation-delay: 3s;
+}
+
+@keyframes hide-screen {
+    100% {display: none;}
+}
+
+@keyframes fade-screen {
+    0% {opacity: 1;}
+    20% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 
@@ -41,32 +79,36 @@ section {
 #fall-guy-face-container {
     display: flex;
     align-items: end;
+    width: 80%;
     aspect-ratio: 16 / 9;
 }
 
 #fall-guy-face-container > div {
-    flex-basis: 33.33%;
+    flex-basis: 18.5%;
 }
 
 #fall-guy-face-container #white-guy {
-    flex-basis: 66.67%;
+    flex-basis: 63%;
     align-self: start;
 }
 
 #fall-guy-face-container #epic-games {
-    justify-content: center;
     display: flex;
+    justify-content: end;
 }
 
-#fall-guy-face-container #mediatonic img {width: 100%;}
-#fall-guy-face-container #epic-games img {width: 65%;}
+#fall-guy-face-container #mediatonic img {width: 96%; translate: 0% .5%;}
+#fall-guy-face-container #epic-games img {width: 62%; translate: -6% -3%;}
 
 #white-face {
     position: relative;
     width: 100%;
-    aspect-ratio: 5/4.9;
+    aspect-ratio: 5 / 4.83;
     border-radius: 50%;
     background-color: #e6e7e5;
+    transform: scale(0.7);
+    transform-origin: 50% 0;
+    translate: 0 9%;
     overflow: hidden;
 }
 
@@ -74,42 +116,41 @@ section {
     position: absolute;
     width: 100%;
     aspect-ratio: 1;
-    background-color: white;
     border-radius: 50%;
-    scale: 1.05 1.1;
-    translate: 0 -11%;
+    background-color: white;
+    scale: 1 .95;
+    translate: 0 -4.5%;
 }
 
 .eye {
     position: absolute;
-    bottom: 25%;
-    width: 10%;
-    height: 20%;
+    bottom: 26%;
+    width: 13.3%;
+    height: 26%;
     border-radius: 999999px;
     background-color: #222325;
 }
 
-#left-eye {left: 25%;}
-#right-eye {right: 25%;}
+#left-eye {left: 21.9%;}
+#right-eye {right: 21.9%;}
 
 .eye-container {
     display: grid;
     place-items: center;
     position: relative;
-    left: -17%;
-    top: -37%;
+    left: -25%;
+    top: -32%;
     width: 100%;
     height: 100%;
-    perspective: 30px;
-    rotate: 46deg;
+    perspective: 23px;
+    rotate: 35deg;
 }
 
 .eye-effect {
-    width: 17%;
-    aspect-ratio: 1 / 4;
+    width: 15%;
+    aspect-ratio: 1.3 / 2;
     background-color: white;
-    transform: rotateX(72deg);
-    border-radius: 50% 50% 40% 40%;
+    border-radius: 50% 50% 50% 50%;
 }
 
 /* ===== PARTNERS ===== */
@@ -121,6 +162,7 @@ section {
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
+    width: 95%;
     aspect-ratio: 16 / 6.5;
 }
 
@@ -586,6 +628,10 @@ section {
 }
 
 /*===== TITLE SCREEN -  FULL LOGO ==== */
+#full-logo {
+    scale: 0;
+}
+
 #full-logo.content {
     top: 0;
 }
@@ -648,7 +694,7 @@ section {
 
 .spark-container {
     position: absolute;
-    height: 5%;
+    height: 3.5%;
     aspect-ratio: 1/3;
     left: 50%;
     top: 50%;
@@ -728,12 +774,12 @@ section {
 
 #circle-orange {
     animation: circle-outer-rotation 20s linear infinite,
-               circle-orange-scale 1.25s ease-in-out .2s 1 forwards;
+               circle-orange-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
 
 #circle-magenta {
     animation: circle-outer-rotation 20s linear infinite,
-               circle-magenta-scale 1.25s ease-in-out .2s 1 forwards;
+               circle-magenta-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
 
 @keyframes circle-outer-rotation {
@@ -768,7 +814,7 @@ section {
 
 #circle-cyan {
     animation: circle-cyan-thick-rotation 20s linear infinite,
-               circle-cyan-thick-scale 1.25s ease-in-out .2s 1 forwards;
+               circle-cyan-thick-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
 
 @keyframes circle-cyan-thick-rotation {
@@ -793,7 +839,7 @@ section {
 
 #circle-cyan-thin {
     animation: circle-cyan-thin-rotation 20s linear infinite,
-               circle-cyan-thin-scale 1.25s ease-in-out .2s 1 forwards;
+               circle-cyan-thin-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
 
 @keyframes circle-cyan-thin-rotation {
@@ -808,7 +854,7 @@ section {
 
 #circle-orange-thin {
     animation: circle-orange-thin-rotation 20s linear infinite,
-               circle-orange-thin-scale 1.25s ease-in-out .2s 1 forwards;
+               circle-orange-thin-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
 
 @keyframes circle-orange-thin-rotation {
@@ -833,7 +879,7 @@ section {
 
 #circle-cyan-medium {
     animation: circle-cyan-medium-rotation 20s linear infinite,
-               circle-cyan-medium-scale 1.25s ease-in-out .2s 1 forwards;
+               circle-cyan-medium-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
 
 @keyframes circle-cyan-medium-rotation {
@@ -857,7 +903,7 @@ section {
 }
 
 #full-logo {
-    animation: full-logo-scale 1s ease-in-out 1 forwards;
+    animation: full-logo-scale 1s ease-in-out 6s forwards;
 }
 
 @keyframes full-logo-scale {
@@ -871,7 +917,7 @@ section {
 }
 
 .sparks-wrapper {
-    animation: sparks-wrapper-scale .4s ease-out .5s forwards;
+    animation: sparks-wrapper-scale .4s ease-out 6.5s 1 forwards;
 }
 
 @keyframes sparks-wrapper-scale {
@@ -885,7 +931,7 @@ section {
 }
 
 .spark {
-    animation: spark-scale .4s ease-out .5s forwards;
+    animation: spark-scale .4s ease-out 6.5s 1 forwards;
 }
 
 @keyframes spark-scale {
@@ -903,7 +949,7 @@ section {
 }
 
 #start-wrapper span {
-    animation: start-scale .3s linear .7s forwards;
+    animation: start-scale .3s linear 6.7s 1 forwards;
 }
 
 @keyframes start-scale {
