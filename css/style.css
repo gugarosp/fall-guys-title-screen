@@ -3,6 +3,7 @@
 
 * {
     user-select: none;
+    font-family: "Asap", serif;
 }
 
 html,
@@ -16,6 +17,131 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+/* ===== MODALS ===== */
+#modals {
+    z-index: 3;
+}
+
+.modal {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #31caec;
+}
+
+.modal-container {
+    position: absolute;
+    margin-left: -0.22%;
+    width: 58%;
+    border: .3vw solid white;
+    border-radius: .75vw;
+    background-color: #31caec;
+    box-shadow: 0 0.3vw 1px #00000022;
+    scale: 0;
+    transition: scale 1s;
+}
+
+.modal-content {
+    padding-inline: 3.6%;
+    font-size: 1.2vw;
+    color: white;
+    text-align: center;
+}
+
+.modal-title {
+    position: relative;
+    padding-block: 0% 1.5%;
+    margin: .5% .7% .42%;
+    font-family: "Titan One", serif;
+    font-size: 3.1vw;
+    text-transform: uppercase;
+    text-shadow: 0.3vw 0.3vw 1px #00000033;
+}
+
+.modal-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: url(../image/modal/title-bg.svg);
+    background-size: contain;
+    opacity: .25;
+}
+
+.modal-text {
+    margin-bottom: 5%;
+    padding-block: 3.05%;
+    border-top: 0.1vw solid white;
+    letter-spacing: .05vw;
+    text-shadow: 0.15vw 0.15vw 1px #00000033;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    position: absolute;
+    bottom: -13%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ===== MODALS - Animation ===== */
+.show-modal-container {
+    scale: 1;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    position: relative;
+    padding: .4% 11.5%;
+    border: .3vw solid white;
+    border-radius: 0.75vw;
+    background-color: #31caec;
+    box-shadow: 0 0.3vw 1px #00000022;
+    font-size: 2.08vw;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0.25vw 0.25vw 1px #00000033;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: .2vw;
+    left: .2vw;
+    width: calc(100% - .5vw);
+    height: calc(100% - 0.35vw);
+    border-radius: 4px;
+    background: url(../image/modal/button-bg.svg) no-repeat 0 center;
+    background-size: contain;
+    opacity: .35;
+    mix-blend-mode: soft-light;
+}
+
+button:hover {
+    background-color: #f935a1;
+    cursor: pointer;
+}
+
+button:hover::before {
+    opacity: .1;
+    mix-blend-mode: normal;
+}
+
+button span {
+    position: relative;
+    font-family: "Titan One", serif;
 }
 
 /* ===== FALL GUY FACE / PARTNERS ===== */
@@ -721,7 +847,7 @@ section {
 }
 
 #start-wrapper span {
-    font-family: "Titan One";
+    font-family: "Titan One", serif;
     color: white;
     text-shadow: 0.1vw 0.1vw 0.1vw rgba(0,0,0,0.3);
     font-size: 1.45vw;
