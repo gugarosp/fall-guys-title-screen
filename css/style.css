@@ -40,6 +40,10 @@ section {
     background-color: #31caec;
 }
 
+.modal-transparent-bg {
+    background-color: transparent;
+}
+
 .modal-container {
     position: absolute;
     margin-left: -0.22%;
@@ -83,11 +87,18 @@ section {
 }
 
 .modal-text {
-    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     padding-block: 3.05%;
+    margin-bottom: 5%;
     border-top: 0.1vw solid white;
     letter-spacing: .05vw;
     text-shadow: 0.15vw 0.15vw 1px #00000033;
+}
+
+.modal-text p {
+    margin: 0;
 }
 
 .modal-buttons {
@@ -95,7 +106,7 @@ section {
     justify-content: center;
     gap: 3%;
     position: absolute;
-    bottom: -13%;
+    bottom: -1.9vw;
     width: 100%;
     box-sizing: border-box;
 }
@@ -319,6 +330,7 @@ button span {
 /* ===== TITLE SCREEN ===== */
 #title-screen {
     background-image: linear-gradient(#125dee, #31fbe5);
+    cursor: pointer;
 }
 
 #title-screen > * {
@@ -353,7 +365,7 @@ button span {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: -8%;
+    top: -5.8vw;
 }
 
 /*===== TITLE SCREEN - CIRCLES =====*/
