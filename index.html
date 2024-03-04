@@ -11,7 +11,7 @@
 
     <section id="modals">
         <div class="modal content">
-            <div id="landscape-warning" class="modal-container show-modal-container">
+            <div id="landscape-warning" class="modal-container">
                 <div class="modal-content modal-title">
                     Device Screen
                 </div>
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div id="sound-warning" class="modal-container" style="display: none;">
+            <div id="sound-warning" class="modal-container">
                 <div class="modal-content modal-title">
                     Sound
                 </div>
@@ -31,8 +31,8 @@
                     This project is better experienced with sound.
                 </div>
                 <div class="modal-content modal-buttons">
-                    <button><span>Sound On</span></button>
-                    <button><span>Sound Off</span></button>
+                    <button id="sound-on"><span>Sound On</span></button>
+                    <button id="sound-off"><span>Sound Off</span></button>
                 </div>
             </div>
         </div>
@@ -418,6 +418,8 @@
             
         </div>
     </section>
+
+    <script type="text/javascript" src="js/modals.js"></script>
     
 </body>
 </html>
