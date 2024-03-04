@@ -49,7 +49,7 @@ section {
     background-color: #31caec;
     box-shadow: 0 0.3vw 1px #00000022;
     scale: 0;
-    transition: scale .3s;
+    transition: scale .5s;
 }
 
 .modal-content {
@@ -174,18 +174,18 @@ button span {
 }
 
 /* ===== FALL GUY FACE / PARTNERS - Animations ===== */
-#fall-guy-face, 
-#partners {
+.start-screen-animation #fall-guy-face, 
+.start-screen-animation #partners {
     animation: hide-screen 3s linear forwards;
 }
 
-#fall-guy-face-container::after, 
-#partners-container::after {
+.start-screen-animation #fall-guy-face-container::after, 
+.start-screen-animation #partners-container::after {
     animation: fade-screen 3s linear forwards;
 }
 
-#partners,
-#partners-container::after {
+.start-screen-animation #partners,
+.start-screen-animation #partners-container::after {
     animation-delay: 3s;
 }
 
@@ -199,7 +199,6 @@ button span {
     80% {opacity: 0;}
     100% {opacity: 1;}
 }
-
 
 /* ===== FALL GUY FACE ===== */
 #fall-guy-face {
@@ -879,7 +878,7 @@ button span {
 }
 
 /*===== TITLE SCREEN - ANIMATIONS =====*/
-#background {
+.start-screen-animation #background {
     animation: background 10s linear infinite;
 }
 
@@ -888,12 +887,12 @@ button span {
     100% {background-position: 23vh 23vh;}
 }
 
-#circle-orange {
+.start-screen-animation #circle-orange {
     animation: circle-outer-rotation 20s linear 6.2s infinite,
                circle-orange-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
 
-#circle-magenta {
+.start-screen-animation #circle-magenta {
     animation: circle-outer-rotation 20s linear 6.2s infinite,
                circle-magenta-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
@@ -923,7 +922,7 @@ button span {
     100% {scale: 1;}
 }
 
-#circle-cyan {
+.start-screen-animation #circle-cyan {
     animation: circle-cyan-thick-rotation 20s linear 6.2s infinite,
                circle-cyan-thick-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
@@ -943,7 +942,7 @@ button span {
     100% {scale: 1;}
 }
 
-#circle-cyan-thin {
+.start-screen-animation #circle-cyan-thin {
     animation: circle-cyan-thin-rotation 20s linear 6.2s infinite,
                circle-cyan-thin-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
@@ -953,7 +952,7 @@ button span {
     100% {rotate: -120deg;}
 }
 
-#circle-orange-thin {
+.start-screen-animation #circle-orange-thin {
     animation: circle-orange-thin-rotation 20s linear 6.2s infinite,
                circle-orange-thin-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
@@ -973,7 +972,7 @@ button span {
     100% {scale: 1;}
 }
 
-#circle-cyan-medium {
+.start-screen-animation #circle-cyan-medium {
     animation: circle-cyan-medium-rotation 20s linear 6.2s infinite,
                circle-cyan-medium-scale 1.25s ease-in-out 6.2s 1 forwards;
 }
@@ -993,7 +992,7 @@ button span {
     100% {scale: 1;}
 }
 
-#full-logo {
+.start-screen-animation #full-logo {
     animation: full-logo-scale 1s ease-in-out 6s 1 forwards;
 }
 
@@ -1007,7 +1006,7 @@ button span {
     100% {scale: 1;}
 }
 
-.sparks-wrapper {
+.start-screen-animation .sparks-wrapper {
     animation: sparks-wrapper-scale .4s ease-out 6.5s 1 forwards;
 }
 
@@ -1016,7 +1015,7 @@ button span {
     100% {scale: 1;}
 }
 
-.spark {
+.start-screen-animation .spark {
     animation: spark-scale .4s ease-out 6.5s 1 forwards;
 }
 
@@ -1026,7 +1025,7 @@ button span {
     100% {scale: 0;}
 }
 
-#start-wrapper span {
+.start-screen-animation #start-wrapper span {
     animation: start-scale .3s linear 6.7s 1 forwards;
 }
 

@@ -14,6 +14,8 @@ landscapeWarning.querySelector("button").addEventListener("click", () => {
 soundWarning.querySelectorAll("button").forEach(element => {
     element.addEventListener("click", event => {
         modals.classList.add("hide");
+
+        document.body.classList.add("start-screen-animation");
     });
 })
 
