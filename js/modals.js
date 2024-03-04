@@ -13,9 +13,15 @@ setTimeout(() => {
 }, 1);
 
 // Landscape warning modal confirmation button
-landscapeWarning.querySelector("button").addEventListener("click", () => {
-    landscapeWarning.classList.remove("show-modal-container");
-    soundWarning.classList.add("show-modal-container");
+landscapeWarning.querySelectorAll("button").forEach(element => {
+    element.addEventListener("click", event => {
+        landscapeWarning.classList.remove("show-modal-container");
+        soundWarning.classList.add("show-modal-container");
+
+        if (event.currentTarget.id == "fullscreen-yes") {
+            document.documentElement.requestFullscreen();
+        }
+    });
 });
 
 // Sound warning modal buttons
