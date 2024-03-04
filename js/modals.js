@@ -20,8 +20,7 @@ soundWarning.querySelectorAll("button").forEach(element => {
         if (event.currentTarget.id == "sound-on") {
             setTimeout(() => {
                 document.querySelector("#title-screen-sound").play();
-            }, 6000);
+            }, 4000);
         }
     });
-})
-
+});

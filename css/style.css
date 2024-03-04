@@ -176,17 +176,17 @@ button span {
 /* ===== FALL GUY FACE / PARTNERS - Animations ===== */
 .start-screen-animation #fall-guy-face, 
 .start-screen-animation #partners {
-    animation: hide-screen 3s linear forwards;
+    animation: hide-screen 2s linear forwards;
 }
 
 .start-screen-animation #fall-guy-face-container::after, 
 .start-screen-animation #partners-container::after {
-    animation: fade-screen 3s linear forwards;
+    animation: fade-screen 2s linear forwards;
 }
 
 .start-screen-animation #partners,
 .start-screen-animation #partners-container::after {
-    animation-delay: 3s;
+    animation-delay: 2s;
 }
 
 @keyframes hide-screen {
@@ -888,13 +888,13 @@ button span {
 }
 
 .start-screen-animation #circle-orange {
-    animation: circle-outer-rotation 20s linear 6.2s infinite,
-               circle-orange-scale 1.25s ease-in-out 6.2s 1 forwards;
+    animation: circle-outer-rotation 20s linear 4.2s infinite,
+               circle-orange-scale 1.25s ease-in-out 4.2s 1 forwards;
 }
 
 .start-screen-animation #circle-magenta {
-    animation: circle-outer-rotation 20s linear 6.2s infinite,
-               circle-magenta-scale 1.25s ease-in-out 6.2s 1 forwards;
+    animation: circle-outer-rotation 20s linear 4.2s infinite,
+               circle-magenta-scale 1.25s ease-in-out 4.2s 1 forwards;
 }
 
 @keyframes circle-outer-rotation {
@@ -923,8 +923,8 @@ button span {
 }
 
 .start-screen-animation #circle-cyan {
-    animation: circle-cyan-thick-rotation 20s linear 6.2s infinite,
-               circle-cyan-thick-scale 1.25s ease-in-out 6.2s 1 forwards;
+    animation: circle-cyan-thick-rotation 20s linear 4.2s infinite,
+               circle-cyan-thick-scale 1.25s ease-in-out 4.2s 1 forwards;
 }
 
 @keyframes circle-cyan-thick-rotation {
@@ -943,8 +943,8 @@ button span {
 }
 
 .start-screen-animation #circle-cyan-thin {
-    animation: circle-cyan-thin-rotation 20s linear 6.2s infinite,
-               circle-cyan-thin-scale 1.25s ease-in-out 6.2s 1 forwards;
+    animation: circle-cyan-thin-rotation 20s linear 4.2s infinite,
+               circle-cyan-thin-scale 1.25s ease-in-out 4.2s 1 forwards;
 }
 
 @keyframes circle-cyan-thin-rotation {
@@ -953,8 +953,8 @@ button span {
 }
 
 .start-screen-animation #circle-orange-thin {
-    animation: circle-orange-thin-rotation 20s linear 6.2s infinite,
-               circle-orange-thin-scale 1.25s ease-in-out 6.2s 1 forwards;
+    animation: circle-orange-thin-rotation 20s linear 4.2s infinite,
+               circle-orange-thin-scale 1.25s ease-in-out 4.2s 1 forwards;
 }
 
 @keyframes circle-orange-thin-rotation {
@@ -973,8 +973,8 @@ button span {
 }
 
 .start-screen-animation #circle-cyan-medium {
-    animation: circle-cyan-medium-rotation 20s linear 6.2s infinite,
-               circle-cyan-medium-scale 1.25s ease-in-out 6.2s 1 forwards;
+    animation: circle-cyan-medium-rotation 20s linear 4.2s infinite,
+               circle-cyan-medium-scale 1.25s ease-in-out 4.2s 1 forwards;
 }
 
 @keyframes circle-cyan-medium-rotation {
@@ -993,7 +993,7 @@ button span {
 }
 
 .start-screen-animation #full-logo {
-    animation: full-logo-scale 1s ease-in-out 6s 1 forwards;
+    animation: full-logo-scale 1s ease-in-out 4s 1 forwards;
 }
 
 @keyframes full-logo-scale {
@@ -1007,7 +1007,7 @@ button span {
 }
 
 .start-screen-animation .sparks-wrapper {
-    animation: sparks-wrapper-scale .4s ease-out 6.5s 1 forwards;
+    animation: sparks-wrapper-scale .4s ease-out 4.5s 1 forwards;
 }
 
 @keyframes sparks-wrapper-scale {
@@ -1016,7 +1016,7 @@ button span {
 }
 
 .start-screen-animation .spark {
-    animation: spark-scale .4s ease-out 6.5s 1 forwards;
+    animation: spark-scale .4s ease-out 4.5s 1 forwards;
 }
 
 @keyframes spark-scale {
@@ -1026,7 +1026,7 @@ button span {
 }
 
 .start-screen-animation #start-wrapper span {
-    animation: start-scale .3s linear 6.7s 1 forwards;
+    animation: start-scale .3s linear 4.7s 1 forwards;
 }
 
 @keyframes start-scale {
