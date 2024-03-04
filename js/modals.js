@@ -16,6 +16,12 @@ soundWarning.querySelectorAll("button").forEach(element => {
         modals.classList.add("hide");
 
         document.body.classList.add("start-screen-animation");
+
+        if (event.currentTarget.id == "sound-on") {
+            setTimeout(() => {
+                document.querySelector("#title-screen-sound").play();
+            }, 6000);
+        }
     });
 })
 
