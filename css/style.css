@@ -19,6 +19,10 @@ section {
     height: 100%;
 }
 
+a {
+    color: white;
+}
+
 .hide {
     display: none;
 }
