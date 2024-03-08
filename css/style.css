@@ -58,7 +58,6 @@ section {
 
 .modal-content {
     padding-inline: 3.6%;
-    font-size: 1.2vw;
     color: white;
     text-align: center;
 }
@@ -93,6 +92,7 @@ section {
     padding-block: 3.05%;
     margin-bottom: 5%;
     border-top: 0.1vw solid white;
+    font-size: 1.2vw;
     letter-spacing: .05vw;
     text-shadow: 0.15vw 0.15vw 1px #00000033;
 }
@@ -1044,4 +1044,30 @@ button span {
 @keyframes start-scale {
     0% {scale: 0;}
     100% {scale: 1;}
+}
+
+/*===== Special Responsiveness =====*/
+@media (max-width: 960px) {
+    #landscape-warning .modal-title {
+        font-size: 22px;
+    }
+
+    #landscape-warning .modal-text {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    #landscape-warning .modal-buttons {
+        bottom: -12px;
+    }
+
+    #landscape-warning button span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 540px) {
+    #landscape-warning.modal-container {
+        width: 90%;
+    }
 }
