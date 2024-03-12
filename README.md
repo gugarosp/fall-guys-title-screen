@@ -10,7 +10,7 @@ If you just want to see the project running, [go here](https://fall-guys-title-s
 ## Video reference
 For comparison with the original game source, [watch the video](https://www.youtube.com/watch?v=yc7F-2iEVe4).
 
-## Version refrence
+## Version reference
 This project was started based on the Shapes and Stickers update and ended on the Survival update from Creative Construction season.
 
 ## Note
