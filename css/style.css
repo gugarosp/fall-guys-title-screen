@@ -58,6 +58,7 @@ a {
     box-shadow: 0 0.3vw 1px #00000022;
     scale: 0;
     transition: scale .5s;
+    will-change: scale;
 }
 
 .modal-content {
@@ -191,11 +192,13 @@ button span {
 /* ===== FALL GUY FACE / PARTNERS - Animations ===== */
 .start-screen-animation #fall-guy-face, 
 .start-screen-animation #partners {
+    will-change: display, visibility;
     animation: hide-screen 2s linear forwards;
 }
 
 .start-screen-animation #fall-guy-face-container::after, 
 .start-screen-animation #partners-container::after {
+    will-change: opacity;
     animation: fade-screen 2s linear forwards;
 }
 
@@ -373,6 +376,10 @@ button span {
 }
 
 /*===== TITLE SCREEN - CIRCLES =====*/
+.circles {
+    will-change: rotate, scale;
+}
+
 .circles svg {
     aspect-ratio: 1;
 }
@@ -770,6 +777,7 @@ button span {
 /*===== TITLE SCREEN -  FULL LOGO ==== */
 #full-logo {
     scale: 0;
+    will-change: scale;
 }
 
 #full-logo.content {
@@ -826,6 +834,7 @@ button span {
     width: 50%;
     aspect-ratio: 1;
     scale: 0;
+    will-change: scale;
 }
 
 .spark-container {
@@ -1042,6 +1051,7 @@ button span {
 }
 
 .start-screen-animation #start-wrapper span {
+    will-change: scale;
     animation: start-scale .3s linear 4.7s 1 forwards;
 }
 
